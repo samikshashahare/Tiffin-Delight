@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './views/Home/Home';
 import About from './views/About/About';
 import Contact from './views/Contact/Contact';
@@ -11,25 +13,23 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
 
   {
-    path : '/',
+    path: '/',
     element: <Home />
   },
   {
-    path : 'about',
+    path: '/about',
     element: <About />
   },
   {
-    path : 'contact',
+    path: '/contact',
     element: <Contact />
   },
   {
-    path : 'login',
+    path: '/login',
     element: <Login />
   }
 ])
 root.render(
-  
-  
   <RouterProvider router={router} />
 
 );
