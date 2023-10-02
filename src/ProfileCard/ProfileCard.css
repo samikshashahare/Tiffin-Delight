@@ -15,14 +15,14 @@
     width: 28vw;
 }
 .card-container{
-    height: 100vh;
+    height: 85vh;
     padding: 40px;
     background-color: #fe346e;
     border-radius: 0;
 }
 .profile-card{
     width: 30vw;
-    margin: 20px auto;
+    margin: 5px auto;
 }
 .profile-info-div{
     margin: 20px 20px;

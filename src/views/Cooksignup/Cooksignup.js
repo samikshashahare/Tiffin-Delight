@@ -8,9 +8,10 @@ import "./Cooksignup.css"
 const Cooksignup = () => {
     return (
         <div >
+            
             <div className="row ">
-                
-                <div className="col bg-white">
+                <div className="col bg-pink">
+                <h1 className="text-center heading "> Profile </h1>
                     <ProfileCard img={Kashishimg} no={"8237988102"} add={"Shivajinagar"} alt="kashish" />
                 </div>
 
