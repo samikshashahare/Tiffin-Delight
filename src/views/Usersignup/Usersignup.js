@@ -6,7 +6,6 @@ function Signup() {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [mobile, setMobile] = useState('')
-  const [gender, setGender] = useState('male')
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -50,7 +49,7 @@ function Signup() {
       firstName:firstName,
       lastName:lastName,
       mobile:mobile,
-      gender:gender,
+     
      
     };
     const temp = [...save, obj];
@@ -65,13 +64,13 @@ function Signup() {
 
 
   return (
-    <div className="signup-container">
+    <div className=" row">
 
-      <div className='sub'>
-       <img src="https://img.freepik.com/free-photo/top-view-delicious-vegan-salad-plate-stained-white-surface_179666-34233.jpg?w=360&t=st=1696237500~exp=1696238100~hmac=dce9b8d72db931ae15a0ecac15c25fb514a4b2414f67a1565765a43b93a177cc" alt="" />
+      <div className=' col-md-6 col-sm-6 col-' >
+         
       </div>
-      <div className='sub'>
-        <h1>Sign Up</h1>
+      <div className='col-md-6 col-sm-6 col-'>
+        <h1 className='m-3'>Sign Up</h1>
         <form>
           <div className="form-group">
             
@@ -103,57 +102,35 @@ function Signup() {
             onChange={(e) => { setMobile(e.target.value) }}
           />
          
-
-          <input
-            type='radio'
-            name='gender'
-            value={'male'}
-            onChange={(e) => {
-              if (e.target.checked) {
-                setGender(e.target.value)
-              }
-            }}
-            checked={gender === 'male'}
-          /> male  &nbsp;
-          <input
-            type='radio'
-            name='gender'
-            value={'female'}
-            onChange={(e) => {
-              if (e.target.checked) {
-                setGender(e.target.value)
-              }
-
-            }}
-            checked={gender === 'female'}
-          /> female
+         <div className="form-group">
          
+         <input
+           type="password"
+           value={password}
+           placeholder='Password'
+           onChange={(e) => setPassword(e.target.value)}
+           className='btn-radio'
+         />
+       </div>
+       <div className="form-group">
+         <input
+           type="password"
+           value={confirmPassword}
+           placeholder='ConfirmPassword'
+           onChange={(e) => setConfirmPassword(e.target.value)}
+         />
+       </div>
+
         
         </form>
 
 
 
 
-        <div className="form-group">
-         
-          <input
-            type="password"
-            value={password}
-            placeholder='Password'
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="password"
-            value={confirmPassword}
-            placeholder='ConfirmPassword'
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-        </div>
+     
         <button onClick={handleSignup} className='sing-up-btn'>Sign Up</button>
         <br />
-        <Link to={'/login'} ><span>Already Account</span></Link>
+        <Link to={'/login'}  ><p className='text-center'>Already Account</p></Link>
       </div>
 
     </div>

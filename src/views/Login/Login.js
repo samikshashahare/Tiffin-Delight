@@ -31,32 +31,34 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container row">
 
-      <div className='sub'>
+      <div className=' col-md-6 col-sm-6 col- '>
 
       </div>
-      <div className='sub'>
-           <h1>Login</h1>
+      <div className='mt-5 col-md-6 col-sm-6 col-'>
+           <h1 className='mb-5'>Login</h1>
       <div className="form-group">
-        <label>Email:</label>
+       
         <input
           type="email"
           value={email}
+          placeholder='Email'
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="form-group">
-        <label>Password:</label>
+       
         <input
           type="password"
           value={password}
+          placeholder='Password'
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button onClick={handleLogin}>Login</button>
-        <p className='ps-5 ms-5 mb-0'>OR</p>
-      <Link to={'/usersignup'} ><button>Signup</button></Link>
+      <button onClick={handleLogin} className='login-button'>Login</button>
+        <p className='text-center m-0 p-0'>OR</p>
+      <Link to={'/usersignup'} style={{textDecoration:'none'}} ><button className='login-button'>Signup</button></Link>
       </div>
      
     </div>
