@@ -1,0 +1,16 @@
+.bg-pink{
+    background-color: #fe346e;
+}
+.bg-white{
+    background-color: white;
+}
+.side-img{
+    height: 100vh;
+    position: relative;
+    right: 60px;
+}
+.profile-side-templet{
+    background-image: url("./tiffin-templet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

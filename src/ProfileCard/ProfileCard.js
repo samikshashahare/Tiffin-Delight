@@ -1,7 +1,8 @@
 import location from "./location.png"
 import phone from "./phone.png"
+import tiffin from "./order-2.png"
 import './ProfileCard.css'
-export default function ProfileCard({ img, no, add, }) {
+export default function ProfileCard({ name,img, no, add, order }) {
     return (
         <>
 
@@ -9,7 +10,7 @@ export default function ProfileCard({ img, no, add, }) {
                 <div className=" card profile-card">
                     <div className='profile-img-div '>
                         <img src={img} alt='profile-image' className='profile-img' />
-                        <p>Name</p>
+                        <p>{name}</p>
                     </div>
                     <div className='profile-info-div'>
                         <div className='profile-info'>
@@ -23,8 +24,8 @@ export default function ProfileCard({ img, no, add, }) {
                         </div>
                         <br />
                         <div className='profile-info'>
-                            <img src={phone} alt="icon" className='icon' />
-                            <span>Order</span>
+                            <img src={tiffin} alt="icon" className='icon' />
+                            <span>Order {order} </span>
                         </div>
                     </div>
                 </div>
