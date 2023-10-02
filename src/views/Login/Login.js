@@ -32,7 +32,12 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h1>Login</h1>
+
+      <div className='sub'>
+
+      </div>
+      <div className='sub'>
+           <h1>Login</h1>
       <div className="form-group">
         <label>Email:</label>
         <input
@@ -50,8 +55,10 @@ function Login() {
         />
       </div>
       <button onClick={handleLogin}>Login</button>
-        <p className='text-center p-1 m-0'>OR</p>
+        <p className='ps-5 ms-5 mb-0'>OR</p>
       <Link to={'/usersignup'} ><button>Signup</button></Link>
+      </div>
+     
     </div>
   );
 }

@@ -1,5 +1,7 @@
 .signup-container {
-    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin: 0 auto;
     padding: 30px;
     background-color: #fff;
@@ -26,14 +28,14 @@
   input[type="text"],
   input[type="email"],
   input[type="password"] {
-    width: 90%;
+    width: 50%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 30px;
   }
   
   .sing-up-btn {
-    width: 100%;
+    width: 30%;
     padding: 10px;
     background-color: #ff9933;
     color: #fff;
