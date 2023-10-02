@@ -1,0 +1,39 @@
+.bg-pink{
+    background-color: #fe346e;
+}
+.profile-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    display: block;
+    margin: 20px auto;
+}
+.profile-img-div {
+    display: block;
+    margin: 12px auto;
+    text-align: center;
+    background-color: #fe346e;
+    width: 28vw;
+}
+.card-container{
+    height: 100vh;
+    padding: 40px;
+    background-color: #fe346e;
+    border-radius: 0;
+}
+.profile-card{
+    width: 30vw;
+    margin: 20px auto;
+}
+.profile-info-div{
+    margin: 20px 20px;
+
+}
+.profile-info{
+    border-bottom: 2px solid black;
+}
+.icon{
+    height: 20px;
+    margin: 5px;
+}
