@@ -11,13 +11,13 @@
     display: block;
     margin: 12px auto;
     text-align: center;
-    background-color: #fe346e;
+    background-color: #ff914d;
     width: 28vw;
 }
 .card-container{
     height: 85vh;
     padding: 40px;
-    background-color: #fe346e;
+    background-color: #ff914d;
     border-radius: 0;
 }
 .profile-card{

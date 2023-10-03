@@ -1,5 +1,5 @@
 .bg-pink{
-    background-color: #fe346e;
+    background-color: #ff914d;
 }
 .bg-white{
     background-color: white;
@@ -10,7 +10,7 @@
     right: 60px;
 }
 .profile-side-templet{
-    background-image: url("./tiffin-templet.png");
+    background-image: url("./side-templat.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
