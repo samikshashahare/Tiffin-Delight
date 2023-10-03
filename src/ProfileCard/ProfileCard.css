@@ -24,6 +24,10 @@
     width: 30vw;
     margin: 5px auto;
 }
+/* .profile-card{
+    width: 30vw;
+    margin: 5px auto;
+} */
 .profile-info-div{
     margin: 20px 20px;
 
@@ -34,4 +38,16 @@
 .icon{
     height: 20px;
     margin: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .remove{
+        display: none;
+    }
+    .profile-card{
+        width: 70vw;
+    }
+    .profile-img-div{
+        width: 65vw;
+    }
 }
