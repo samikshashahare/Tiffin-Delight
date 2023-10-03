@@ -1,0 +1,11 @@
+.main-container-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+}
+.footer-list-cont{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
