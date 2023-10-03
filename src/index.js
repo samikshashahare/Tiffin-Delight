@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     element: <Login />
   },
    {
-    path: '/UserPofile',
+    path: '/userpofile',
     element: <UserPofile />
   },
   {
