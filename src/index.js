@@ -34,15 +34,15 @@ const router = createBrowserRouter([
     element: <Login />
   },
    {
-    path: '/userpofile',
+    path: '/userprofile',
     element: <UserPofile />
   },
   {
-    path: '/Usersignup',
+    path: '/usersignup',
     element: <Usersignup />
   },
   {
-    path:'/MealPlan',
+    path:'/mealplan',
     element: <MealPlan />
   }
 ])
