@@ -4,8 +4,10 @@
     background-color: fffffff;
     box-shadow: 0 0 5px 2px #ccc;
     border-radius: 10px;
+    margin: 50px;
     padding-left: 10px;
     padding: 10px;
+    overflow: hidden;
  
 }
 .food-img{

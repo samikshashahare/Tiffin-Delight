@@ -1,0 +1,67 @@
+
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.sing-up-btn {
+  width: 30%;
+  padding: 10px;
+  display: block;
+  margin: 5px auto;
+  background-color: #ff9933;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 20px;
+  }
+  
+  .sing-up-btn {
+    width: 40%;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .sing-up-btn {
+    width: 60%;
+    font-size: 12px;
+  }
+}
