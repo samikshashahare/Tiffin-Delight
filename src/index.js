@@ -34,12 +34,12 @@ const router = createBrowserRouter([
     element: <Login />
   },
    {
-    path: '/cooksignup',
-    element: <Cooksignup />
-  },
-  {
     path: '/UserPofile',
     element: <UserPofile />
+  },
+  {
+    path: '/Usersignup',
+    element: <Usersignup />
   },
   {
     path:'/MealPlan',

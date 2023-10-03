@@ -4,8 +4,8 @@ import ProfileCard from "../../ProfileCard/ProfileCard";
 import Kashishimg from "./kashish.png"
 import SideBG from "./bgImg.png" 
 
-import "./Cooksignup.css"
-const Cooksignup = () => {
+import "./UserProfile.css"
+const UserProfile = () => {
     return (
         <div >
             
@@ -26,4 +26,4 @@ const Cooksignup = () => {
     )
 }
 
-export default Cooksignup
+export default UserProfile
