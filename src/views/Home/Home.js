@@ -34,15 +34,15 @@ Discover more deals and restaurant rewards near you. Cash in on Perks and get $1
                 <div className="d-flex container  justify-content-around  flex-wrap">
                     < Homecardtwo text="Order on
 Call / Whatsapp" img={whatsapp} />
- < Homecardtwo text="20000+ Happy &
+                    < Homecardtwo text="20000+ Happy &
 trusted Customers" img={customer} />
- < Homecardtwo text="Best tiffin services
+                    < Homecardtwo text="Best tiffin services
 In Pune" img={tiffin} />
-< Homecardtwo text="Fresh & Quality
+                    < Homecardtwo text="Fresh & Quality
 Ingredients" img={fresh} />
- < Homecardtwo text="Free home delivery
+                    < Homecardtwo text="Free home delivery
 around pune" img={home} />
- < Homecardtwo text="Home like food for
+                    < Homecardtwo text="Home like food for
 every kind of Hunger" img={hunger} />
                 </div>
 
@@ -55,12 +55,12 @@ every kind of Hunger" img={hunger} />
 
                 </h4>
                 <span className="text-halthy">Green Souls Kitchens has been serving 100% Fresh and Authentic Indian Food for over a decade in the city of Pune. Unlike other tiffin and catering services we  give you multiple options to choose your own meals as we have  got a wide range of menu selection. You can order according to your needs and desires as there is a choice between Jain food, Vegetarian food and Non vegetarian food. Moreover you can customise your own meal according to your cravings and get rid of the same old boring food .</span>
-                 <br></br>
-               
-                    <img src={healthy} className="img-healthy"></img>
-                
+                <br></br>
+
+                <img src={healthy} className="img-healthy"></img>
+
             </div>
-           
+
         </div>
     </>
     )
