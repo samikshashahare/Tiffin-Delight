@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Usersignup.css';
 import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 
 function Signup() {
   const [firstName, setFirstName] = useState('')
   const [address, setAddress] = useState('')
   const [mobile, setMobile] = useState('')
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -36,8 +37,34 @@ function Signup() {
     }
 
     return true;
-  };
+  }
 
+  const fetchLocation = () => {
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(async (position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+  
+        const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+  
+        try {
+          const response = await axios.get(apiUrl);
+          if (response.data.display_name) {
+            const formattedAddress = response.data.display_name;
+            setAddress(formattedAddress);
+          } else {
+            setAddress('Address not found');
+          }
+        } catch (error) {
+          console.error('Error fetching address:', error);
+          setAddress('Error fetching address');
+        }
+      });
+    } else {
+      alert('Geolocation is not available in your browser.');
+    }
+  }
+  
   const handleSignup = () => {
     if (requiredFields() === false) {
       return;
@@ -58,7 +85,10 @@ function Signup() {
 
 
     navigate('/login');
-  };
+  }
+
+  
+
 
 
 
@@ -102,7 +132,7 @@ function Signup() {
             </div>
 
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
-              <div className="form-floating mb-3">
+              <div className="form-floating mb-3 emoji-position">
                 <input
                   className='form-control my-input rounded-5'
                   type="Text"
@@ -110,7 +140,9 @@ function Signup() {
                   value={address}
                   onChange={(e) => { setAddress(e.target.value) }}
                 />
+                
                 <label htmlFor="floatingInput">Full Address</label>
+                 <span onClick={fetchLocation} className='location-emoji'>📍</span>
               </div>
             </div>
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
@@ -154,6 +186,8 @@ function Signup() {
             <br />
             <Link to={'/login'}  ><span className='d-block text-center p-0 text-black'>Already Account?</span></Link>
 
+          
+
           </form>
 
 
@@ -163,9 +197,7 @@ function Signup() {
 
 
       </div>
-      {/* <div className='col-lg-6 col-md-12 col-sm-12 col-' >
-
-      </div>  */}
+     
     </div >
   );
 }

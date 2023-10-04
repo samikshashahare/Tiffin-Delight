@@ -1,6 +1,4 @@
-
-
-
+/* Default styles for larger screens */
 .sing-up-btn {
   width: 30%;
   padding: 10px;
@@ -14,13 +12,44 @@
   font-size: 16px;
 }
 
-.back-ground-signup{
+.back-ground-signup {
   background-image: url(https://foodindustryexecutive.com/wp-content/uploads/2022/06/bigstock-Food-Background-Food-Concept-W-445520756.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 115vh;
 }
-.sign-up-form{
+
+.sign-up-form {
   background: rgba(0, 0, 0, 0.658);
   height: 115vh;
+}
+
+.emoji-position {
+  position: relative;
+}
+
+.location-emoji {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .sing-up-btn {
+    width: 80%; /* Adjust width for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .back-ground-signup,
+  .sign-up-form {
+    height: auto; /* Allow content to determine height */
+  }
+
+  .location-emoji {
+    right: 5px; /* Adjust position for smaller screens */
+    bottom: 15px; /* Adjust position for smaller screens */
+  }
 }
