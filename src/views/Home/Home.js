@@ -13,7 +13,6 @@ import hunger from './Homecard/hunger.png';
 import tiffin from './Homecard/tiffin-service.png';
 import whatsapp from './Homecard/whatapp.png';
 import healthy from './Homeimg/healthy.png';
-
 import './Home.css';
 const Home = () => {
     return (<>
@@ -63,6 +62,7 @@ every kind of Hunger" img={hunger} />
             </div>
 
         </div>
+    
     </>
 
     )

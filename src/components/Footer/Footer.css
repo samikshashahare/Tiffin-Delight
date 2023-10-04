@@ -3,9 +3,52 @@
     flex-direction: column;
     background-color: black;
     width: 100%;
+    padding: 10px;
 }
 .footer-list-cont{
     display: flex;
     flex-wrap: wrap;
     color: white;
+    justify-content: space-evenly;
+}
+.footer-cont-heading{
+    font-size: 28px;
+
+}
+.footer-img{
+    height: 40px;
+    width: 170px;
+    margin: 50px;
+    border: 1px solid white;
+    border-radius: 8px;
+    
+}
+.fotter-cont-img{
+    display: flex;
+    justify-content: center;
+}
+.fotter-cont-logos{
+    padding: 20px;
+   
+}
+.fotter-cont-logos-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+   
+}
+.footer-logo{
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+    
+}
+.fotter-cont-logo{
+    display: flex;
+    flex-direction: row;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
