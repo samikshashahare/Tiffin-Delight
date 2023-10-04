@@ -1,36 +1,43 @@
 .menu-card{
-    height: 370px;
-    width: 300px;
-    background-color: fffffff;
+   height: 23rem;
+   width: 20rem;
+   
     box-shadow: 0 0 5px 2px #ccc;
     border-radius: 10px;
-    margin: 50px;
-    padding-left: 10px;
-    padding: 10px;
-    overflow: hidden;
+    margin: 1rem 2rem ;
+    
  
 }
 .food-img{
-    height: 200px;
-    margin-left: 15px;
+  height: 12rem;
+  width:18rem ;
+  display: block;
+  margin: 1rem auto;
 }
 .food-title{
    font-size: 18px;
-    padding: 1px;
-    font-weight: 700;
-    margin: 0;
-}
-.food-discription{
+display: block;
+    margin-left: 1rem;
+   
+   }
+   .lunch-dinner{
+    margin-left: 1rem;
+    font-size: 1rem;
+    
+   }
+   
+/* .food-discription{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-size: 15px;
     margin: 0;
-}
-.food-time{
+} */
+/* .food-time{
     font-size: 15px;
-}
+} */
 .food-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 1rem;
 }
 .food-price{
     font-size: 13px;
