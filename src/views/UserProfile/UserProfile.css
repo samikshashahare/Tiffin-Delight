@@ -1,3 +1,9 @@
+.Profile-page{
+    background-image: url(https://foodindustryexecutive.com/wp-content/uploads/2022/06/bigstock-Food-Background-Food-Concept-W-445520756.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 115vh;
+}
 .bg-pink{
     background-color: #ff914d;
 }
