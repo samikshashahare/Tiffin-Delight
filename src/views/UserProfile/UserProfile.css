@@ -1,6 +1,7 @@
 .bg-pink{
     background-color: #ff914d;
 }
+
 .bg-white{
     background-color: white;
 }
@@ -10,7 +11,7 @@
     right: 60px;
 }
 .profile-side-templet{
-    background-image: url("./side-templat.png");
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -19,5 +20,10 @@
     font-family: gabriola;
     font-size: 50px;
     margin-top: 20px;
-   
+}
+.profile-templat-img{
+    height: 500px;
+    position: relative;
+    top: 70px;
+    left: 50px;
 }

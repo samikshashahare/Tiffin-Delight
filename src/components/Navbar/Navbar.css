@@ -1,37 +1,30 @@
-.header{
-    height: 5rem;
-    padding: 0 8rem;
+.nav-logo{
+    height: 70px;
+    margin-left: 10px;
+    display: block;
+}
+.nav-bar{
+    background-color:  rgb(227, 241, 253);
+    width: 100%;
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border: 2px solid black;
-    
+   box-shadow: 0 0 5px 3px rgb(204, 218, 230) ;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+   
 }
-.navbar{
+.nav-menu{
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    justify-content: space-around;
 }
-.nav-list{
-    width: 70vw;
-   
-    display: flex;
-    justify-content: space-between;
+.nav-menu li{
+    margin: 10px 40px;
 }
-.list-item{
-    list-style: none;
-    text-decoration: none;
-   
+.profile-logo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow:0 0 5px 3px rgb(165, 165, 253) ;
 }
-.nav-link:link,
-.nav-link:visited{
-    display: inline-block;
-   
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color:rgb(95, 94, 94) ;
-    
-
-}
-
