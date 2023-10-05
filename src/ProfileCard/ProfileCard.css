@@ -68,4 +68,22 @@
     .address{
         width: 10vw;
     }
+    
+
+
+    .profile-info-div{
+        margin: 20px 20px;
+    
+    }
+    .profile-info{
+        border-bottom: 2px solid rgb(0, 0, 0);
+        position: relative;
+        bottom: 80px;
+    }
+    .icon{
+        height: 20px;
+        margin: 5px;
+    }
+
+
 }

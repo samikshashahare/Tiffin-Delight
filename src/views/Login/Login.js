@@ -40,7 +40,7 @@ function Login() {
           <h1 className='mb-5'>jjj</h1>
         <div className='form'> 
         <h1 className='mb-5 text-center  text-dark' style={{fontFamily:'gabriola' ,fontWeight:'bolder'}}>Login</h1>
-          <div className='col-md-6 mx-auto col-lg-6 col- col-sm' style={{width : '50%'}}>
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm' style={{width : '80%'}}>
             <div className="form-floating mb-3">
               <input
                 type="email"
@@ -52,7 +52,7 @@ function Login() {
               <label htmlFor="floatingInput">Enter UserName </label>
             </div>
           </div>
-          <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '50%'}}>
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '80%'}}>
             <div className="form-floating">
 
               <input

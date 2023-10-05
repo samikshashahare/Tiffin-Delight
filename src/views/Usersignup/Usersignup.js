@@ -78,7 +78,7 @@ function Signup() {
             <div className="col-md-6 mx-auto col-lg-6 col- col-sm " >
               <div className="form-floating mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="email"
                   value={email}
                   placeholder='Enter UserName'
@@ -91,7 +91,7 @@ function Signup() {
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
               <div className="form-floating mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="Text"
                   placeholder="Full Name"
                   value={firstName}
@@ -104,7 +104,7 @@ function Signup() {
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
               <div className="form-floating mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="Text"
                   placeholder="Full Address"
                   value={address}
@@ -116,7 +116,7 @@ function Signup() {
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
               <div className="form-floating mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="text"
                   placeholder="Mobile No."
                   value={mobile}
@@ -128,7 +128,7 @@ function Signup() {
             <div className="col-md-6 mx-auto col-lg-6 col- col-sm">
               <div className="form-floating mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="password"
                   value={password}
                   placeholder='Password'
@@ -140,7 +140,7 @@ function Signup() {
             <div className="col-md-6 mx-auto col-lg-6 col- col-sm">
               <div className="form-floating mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="password"
                   value={confirmPassword}
                   placeholder='ConfirmPassword'
