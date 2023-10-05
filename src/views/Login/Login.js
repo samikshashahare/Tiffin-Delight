@@ -72,7 +72,7 @@ function Login() {
               <input
                 type="email"
                 value={email}
-                className='form-control my-input rounded-5'
+                className='form-control my-input rounded-2'
                 placeholder='Enter Email'
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -85,7 +85,7 @@ function Login() {
               <input
                 type="password"
                 value={password}
-                className='form-control rounded-5 '
+                className='form-control rounded-2 '
                 placeholder='Password'
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -110,7 +110,7 @@ function Login() {
                   <input
                     type="password"
                     value={newPassword}
-                    className='form-control rounded-5 '
+                    className='form-control rounded-2 '
                     placeholder='New Password'
                     onChange={(e) => setNewPassword(e.target.value)}
                   />
