@@ -53,8 +53,8 @@ return menucard.type == menu
       </div>
     </div>
 
-    <div class="col-lg-6 col-md-12 scroll-behaviour  ">
-    <div className='d-flex  container  '>
+    <div class="col-lg-6 col-md-12">
+    <div className='d-flex '>
     {
       filtermenu.map((card,index)=>{
         const {id,img,miniMeal,regularMeal,jumboMeal,tittle,type} = card

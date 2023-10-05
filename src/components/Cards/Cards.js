@@ -3,7 +3,7 @@ import './Cards.css'
 import { Link } from "react-router-dom";
 const  Cards = ({id,img,minimeal,regularmeal,jumbomeal,tittle,type}) =>{
     return(
-        <div>
+        <div className="d-flex">
            <div className='menu-card'>
                   <img src={img} alt="" className="food-img" />
                  
