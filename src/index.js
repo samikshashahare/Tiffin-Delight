@@ -5,13 +5,14 @@ import Home from './views/Home/Home';
 import About from './views/About/About';
 import Contact from './views/Contact/Contact';
 import Login from './views/Login/Login';
-import UserPofile from './views/UserProfile/UserProfile';
+import UserProfile from './views/UserProfile/UserProfile';
 import Usersignup from './views/Usersignup/Usersignup';
 import MealPlan from './views/MealPlan/MealPlan';
 
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Menucard from './views/Menucard/Menucard';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,17 +34,26 @@ const router = createBrowserRouter([
     path: '/login',
     element: <Login />
   },
-   {
+  {
     path: '/userprofile',
-    element: <UserPofile />
+    element: <UserProfile />
+
   },
   {
     path: '/usersignup',
     element: <Usersignup />
   },
   {
-    path:'/mealplan',
+    path: '/mealplan',
     element: <MealPlan />
+  },
+  {
+    path: '/menucard',
+    element: <Menucard/>
+  },
+  {
+    path: '/blog',
+    element: <Blog/>
   }
 ])
 root.render(
