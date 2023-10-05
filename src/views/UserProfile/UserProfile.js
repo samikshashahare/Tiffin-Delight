@@ -1,28 +1,39 @@
 import React from "react";
-import thali from './thali.jpg'
+import Navbar from "../../components/Navbar/Navbar";
+
 import ProfileCard from "../../ProfileCard/ProfileCard";
-import Kashishimg from "./kashish.png"
-import SideBG from "./bgImg.png" 
+import Kashishimg from "./kashish.png" 
+import { useEffect, useState } from "react"
 
 import "./UserProfile.css"
 const UserProfile = () => {
-    return (
-        <div >
-            
-            <div className="row ">
-                <div className="col bg-pink">
-                <h1 className="text-center heading "> Profile </h1>
-                    <ProfileCard img={Kashishimg} no={"8237988102"} add={"Shivajinagar"} alt="kashish" />
-                </div>
+    
+    const [getinfo, setGetinfo] = useState([])
+    useEffect(() => {
+        const profile = localStorage.getItem('details')
+        const profileDetails = JSON.parse(profile)
+        setGetinfo(profileDetails)
+        console.log(profileDetails)
+    }, [])
 
+    return (
+        <>
+            <Navbar />
+
+        <div className="Profile-page" >
+            
+            <div className="row m-0 p-0 w-100 ">
                 <div className="col ">
-                    <div className="profile-side-templet">
-                    <img src={SideBG} className="side-img" alt="img"/>
-                    </div>
+                <h1 className="text-center heading "> My Profile </h1>
+                   {
+                    getinfo.map((user,index)=>{
+                       return <ProfileCard key={index} name={user.firstName} img={Kashishimg} no={user.mobile} mail={user.email} address={user.address}/>
+                    })
+                   }
                 </div>
             </div>
-
         </div>
+        </>
     )
 }
 
