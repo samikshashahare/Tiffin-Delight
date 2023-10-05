@@ -8,6 +8,7 @@ import Login from './views/Login/Login';
 import UserProfile from './views/UserProfile/UserProfile';
 import Usersignup from './views/Usersignup/Usersignup';
 import MealPlan from './views/MealPlan/MealPlan';
+import Blog from './views/Blog/Blog';
 
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/blog',
-    element: <Blog/>
+    element: <Blog />
   }
 ])
 root.render(
