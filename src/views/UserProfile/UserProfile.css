@@ -1,23 +1,26 @@
-.bg-pink{
-    background-color: #fe346e;
+.Profile-page{
+    background-image:linear-gradient(360deg , rgba(20, 19, 19, 0.726), rgba(20, 19, 19, 0.62)), url(https://foodindustryexecutive.com/wp-content/uploads/2022/06/bigstock-Food-Background-Food-Concept-W-445520756.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 115vh;
 }
+.bg-pink{
+    background-color: #ff914d;
+}
+
 .bg-white{
     background-color: white;
 }
-.side-img{
-    height: 100vh;
-    position: relative;
-    right: 60px;
-}
-.profile-side-templet{
-    background-image: url("./tiffin-templet.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .heading{
     color: white;
     font-family: gabriola;
     font-size: 50px;
     margin-top: 20px;
-   
+}
+.profile-templat-img{
+    height: 500px;
+    position: relative;
+    top: 70px;
+    left: 50px;
 }
