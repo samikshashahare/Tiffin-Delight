@@ -1,37 +1,71 @@
 
 .profile-img{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
-    border: 2px dashed white;
     display: block;
     margin: 20px auto;
+    position: absolute;
+    bottom: 120px;
+    left: 120px;
+}
+.user-name{
+    margin-top:80px ;
+    margin-bottom: 20px;
 }
 .profile-img-div {
     display: block;
     margin: 12px auto;
     text-align: center;
-    background-color: #fe346e;
     width: 28vw;
+    height: 100px;
+    position: relative;
 }
 .card-container{
-    height: 85vh;
+    height: 80vh;
     padding: 40px;
-    background-color: #fe346e;
+
     border-radius: 0;
 }
 .profile-card{
     width: 30vw;
-    margin: 5px auto;
+    margin: 45px auto;
+    padding: 10px 20px;
+    background: rgba(246, 232, 232, 0.587);
+    /* color: aliceblue; */
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    border-radius: 25px;
+    /* box-shadow: 0 0 5px 5px rgba(225, 216, 216, 0.898); */
+    
 }
+
 .profile-info-div{
     margin: 20px 20px;
 
 }
 .profile-info{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    position: relative;
+    bottom: 80px;
 }
 .icon{
     height: 20px;
     margin: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .remove{
+        display: none;
+    }
+    .profile-card{
+        width: 70vw;
+    }
+    .profile-img-div{
+        width: 65vw;
+    }
+    .address{
+        width: 10vw;
+    }
 }
