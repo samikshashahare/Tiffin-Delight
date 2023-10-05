@@ -3,7 +3,6 @@ import Navbar from "../../components/Navbar/Navbar";
 
 import ProfileCard from "../../ProfileCard/ProfileCard";
 import Kashishimg from "./kashish.png" 
-import templat from "./profile.png"
 import { useEffect, useState } from "react"
 
 import "./UserProfile.css"
@@ -23,7 +22,7 @@ const UserProfile = () => {
 
         <div className="Profile-page" >
             
-            <div className="row m-0 p-0 w-100 bg-skyblue">
+            <div className="row m-0 p-0 w-100 ">
                 <div className="col ">
                 <h1 className="text-center heading "> My Profile </h1>
                    {
@@ -32,11 +31,6 @@ const UserProfile = () => {
                     })
                    }
                 </div>
-                {/* <div className="col remove">
-                    <div className="profile-side-templet">
-                    <img src={templat}  alt="templat" className="profile-templat-img"/>
-                    </div>
-                </div> */}
             </div>
         </div>
         </>

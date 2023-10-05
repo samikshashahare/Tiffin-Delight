@@ -5,7 +5,7 @@ import Home from './views/Home/Home';
 import About from './views/About/About';
 import Contact from './views/Contact/Contact';
 import Login from './views/Login/Login';
-import UserPofile from './views/UserProfile/UserProfile';
+import UserProfile from './views/UserProfile/UserProfile';
 import Usersignup from './views/Usersignup/Usersignup';
 import MealPlan from './views/MealPlan/MealPlan';
 
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
     element: <Login />
   },
    {
-    path: '/userpofile',
-    element: <UserPofile />
+    path: '/userprofile',
+    element: <UserProfile />
   },
   {
     path: '/Usersignup',

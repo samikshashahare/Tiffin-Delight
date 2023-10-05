@@ -1,23 +1,28 @@
 .nav-logo{
-    height: 70px;
-    margin-left: 10px;
+    height: 50px;
+    margin: 0 10px;
     display: block;
 }
 .nav-bar{
-    background-color:  rgb(227, 241, 253);
+    background-color:rgba(32, 17, 17, 0.905);
     width: 100%;
-    padding-top: 5px;
+    height: 60px;
+    padding:0  5px;
     display: flex;
     justify-content: space-between;
-   box-shadow: 0 0 5px 3px rgb(204, 218, 230) ;
+    align-items: center;
+    
     z-index: 1;
     position: fixed;
     top: 0;
-   
 }
 .nav-menu{
     display: flex;
     justify-content: space-around;
+    color: antiquewhite;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
 }
 .nav-menu li{
     margin: 10px 40px;
@@ -26,5 +31,8 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    box-shadow:0 0 5px 3px rgb(165, 165, 253) ;
+    /* box-shadow:0 0 5px 3px rgb(165, 165, 253) ; */
+}
+.link-deco{
+    text-decoration: none;
 }
