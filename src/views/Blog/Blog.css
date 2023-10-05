@@ -1,0 +1,25 @@
+.blog-cont1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(./blog-img1.jpg);
+  background-size: cover;
+  height: 480px;
+  width: 100%;
+   
+}
+.blog-heading1{
+    font-size:40px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    
+}
+.blog-heading2{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    
+}
