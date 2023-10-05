@@ -2,9 +2,19 @@ import React from 'react'
 import './Menucard.css';
 import Cards from './../../components/Cards/Cards';
 import Menu from './../utils/Menu.json';
+import { useState } from 'react';
 
 
 const Menucard = () => {
+const [menu,setmenu] =useState('');
+ const search = (type) =>{
+    setmenu(type);
+ }
+
+const filtermenu = menu? Menu.filter((menucard)=>{
+return menucard.type == menu
+}) : Menu
+
   return (<>
     <div>
      <div >
@@ -13,9 +23,9 @@ const Menucard = () => {
     <div class="col-lg-6 col-md-12 background-img ">
       <div className='select-menu'>
 <h3 className='likes'>What would you like</h3>
-<button className='button'>Breakfast</button>
-<button className='button'>Lunch</button>
-<button className='button'>Dinner</button>
+<button className='button' onClick={()=>{search('breakfast')}}>Breakfast</button>
+<button className='button' onClick={()=>{search('lunch')}}>Lunch</button>
+<button className='button' onClick={()=>{search('dinner')}}>Dinner</button>
 <form>
   <span className='cuisines'>Cuisines</span>
   <input type='checkbox' 
@@ -42,17 +52,20 @@ const Menucard = () => {
 <button className='search-btn'>Search</button>
       </div>
     </div>
-    <div class="col-lg-6 col-md-12 scroll-behaviour">
-    
+
+    <div class="col-lg-6 col-md-12">
+    <div className='d-flex '>
     {
-      Menu.map((card,index)=>{
-        const {id,img,miniMeal,regularMeal,jumboMeal,tittle} = card
+      filtermenu.map((card,index)=>{
+        const {id,img,miniMeal,regularMeal,jumboMeal,tittle,type} = card
         return(<>
- <Cards id={id} img={img} minimeal={miniMeal} regularmeal={regularMeal} jumbomeal={jumboMeal} tittle={tittle} />
+ <Cards id={id} img={img} minimeal={miniMeal} regularmeal={regularMeal} jumbomeal={jumboMeal} tittle={tittle} type={type} />
 
         </>)
       })
     }
+
+</div>
     </div>
    
   </div>
