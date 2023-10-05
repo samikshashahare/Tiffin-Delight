@@ -1,0 +1,110 @@
+.section{
+   
+    background-image: url(https://foodindustryexecutive.com/wp-content/uploads/2022/06/bigstock-Food-Background-Food-Concept-W-445520756.jpg)   ;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    height: 100vh;
+    width: 100vw;
+    }
+    .contact-container{
+        background:   rgba(0, 0, 0, 0.658); 
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        
+    }
+.contact-us {
+    color: white;
+    height: 10rem;
+    width: 50rem;
+   
+    margin: 3rem auto;
+
+}
+.heading-contact{
+   text-align: center;
+}
+.contact-para{
+    color: white;
+    text-align: center;
+}
+.second-contact-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+
+.contact-info{
+    height: 30rem;
+    width: 12rem;
+    
+}
+.input-data{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+    color: black;
+    height: 90%;
+}
+
+.input-data h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.input-data .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-data .input-box input,
+.input-data .input-box textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+
+}
+.input-data .input-box span{
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.input-data .input-box input:focus ~ span,
+.input-data .input-box input:valid ~ span,
+.input-data .input-box textarea:focus ~ span,
+.input-data .input-box textarea:valid ~ span {
+    color: black;
+font-size: 12px;
+transform: translateY(-20px);
+}
+ .send
+{
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 0.4rem;
+    
+}
