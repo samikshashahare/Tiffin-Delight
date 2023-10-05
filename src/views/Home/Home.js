@@ -1,5 +1,4 @@
 import React from "react";
-
 import herosection from './Homeimg/herosection1.webp';
 import Homecard from './../../components/Homecard/Homecard';
 import delivery from './Homeimg/delivery-pickup.png';
@@ -62,6 +61,7 @@ every kind of Hunger" img={hunger} />
             </div>
 
         </div>
+      
     
     </>
 
