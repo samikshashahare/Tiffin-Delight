@@ -1,5 +1,5 @@
 import React from "react";
-
+import Footer from './../../components/Footer/Footer';
 import herosection from './Homeimg/herosection1.webp';
 import Homecard from './../../components/Homecard/Homecard';
 import delivery from './Homeimg/delivery-pickup.png';
@@ -13,7 +13,6 @@ import hunger from './Homecard/hunger.png';
 import tiffin from './Homecard/tiffin-service.png';
 import whatsapp from './Homecard/whatapp.png';
 import healthy from './Homeimg/healthy.png';
-
 import './Home.css';
 const Home = () => {
     return (<>
@@ -63,6 +62,7 @@ every kind of Hunger" img={hunger} />
             </div>
 
         </div>
+    <Footer/>
     </>
 
     )

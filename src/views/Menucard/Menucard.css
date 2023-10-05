@@ -1,0 +1,77 @@
+.background-img{
+    background-image: url(https://foodindustryexecutive.com/wp-content/uploads/2022/06/bigstock-Food-Background-Food-Concept-W-445520756.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    height: 100vh;
+}
+
+.select-menu{
+    background: rgba(0, 0, 0, 0.658);
+    height: 70vh;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5rem;
+    
+}
+.likes{
+    text-align: center;
+    color: white;
+  padding-top: 2rem;
+}
+.button{
+    height: 2.8rem;
+    width: 8rem;
+   margin-left: 1rem;
+   margin-top: 1rem;
+   border:0.5px solid red;
+   border-radius: 0.5rem;
+   background-color: white;
+   font-size: 1.3rem;
+   font-weight: 500;
+   transition: all 0.3s linear;
+   margin-bottom: 1rem;
+}
+.button:hover{
+    background-color: red;
+    color: white;
+}
+.cuisines{
+    color: white;
+    font-size:1.3rem ;
+    font-weight: 500;
+    margin-left: 2rem ;
+    margin-right: 2rem;
+    
+}
+.veg-non{
+    color: white;
+    font-size:1.3rem ;
+    font-weight: 500;
+   
+}
+.checkbox-input{
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+}
+.list
+{
+    font-size: 1rem;
+}
+.search-btn{
+    height: 2.8rem;
+    width: 8rem;
+  margin-left: 19rem;
+   margin-top: 0.5rem;
+  border: none;
+   border-radius: 0.5rem;
+   background-color: red;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 500;
+  
+}
+.scroll-behaviour{
+    overflow-y: scroll;
+    height: 100vh;
+}

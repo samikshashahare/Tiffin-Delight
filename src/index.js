@@ -12,6 +12,7 @@ import MealPlan from './views/MealPlan/MealPlan';
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Menucard from './views/Menucard/Menucard';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,17 +34,26 @@ const router = createBrowserRouter([
     path: '/login',
     element: <Login />
   },
-   {
+  {
     path: '/userprofile',
     element: <UserProfile />
+
   },
   {
-    path: '/Usersignup',
+    path: '/usersignup',
     element: <Usersignup />
   },
   {
-    path:'/MealPlan',
+    path: '/mealplan',
     element: <MealPlan />
+  },
+  {
+    path: '/menucard',
+    element: <Menucard/>
+  },
+  {
+    path: '/blog',
+    element: <Blog/>
   }
 ])
 root.render(

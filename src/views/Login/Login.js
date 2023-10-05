@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [showUpdatePassword, setShowUpdatePassword] = useState(false);
 
   const handleLogin = () => {
 
@@ -30,6 +32,31 @@ function Login() {
     }
   };
 
+
+  const handleUpdatePassword = () => {
+    const logindata = localStorage.getItem('details');
+
+    if (!logindata) {
+      alert('No user data found in local storage.');
+      return;
+    }
+
+    const storedDetails = JSON.parse(logindata);
+    const userIndex = storedDetails.findIndex((obj) => {
+      return obj.email === email;
+    });
+
+    if (userIndex !== -1) {
+      storedDetails[userIndex].password = newPassword;
+      localStorage.setItem('details', JSON.stringify(storedDetails));
+      alert('Password updated successfully!');
+    } else {
+      alert('User not found.');
+    }
+
+    setShowUpdatePassword(false)
+  }
+
   return (
     <div className=" contanier row " style={{height:'100vh'}}>
 
@@ -46,10 +73,10 @@ function Login() {
                 type="email"
                 value={email}
                 className='form-control my-input rounded-5'
-                placeholder='Enter UserName'
+                placeholder='Enter Email'
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <label htmlFor="floatingInput">Enter UserName </label>
+              <label htmlFor="floatingInput">Enter Email </label>
             </div>
           </div>
           <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '80%'}}>
@@ -64,6 +91,7 @@ function Login() {
               />
               <label htmlFor="floatingInput">Password</label>
             </div>
+           
           </div>
           <button onClick={handleLogin} className='login-button mt-3'>Login</button>
           <p className='text-center m-0 p-0'>OR</p>
@@ -73,13 +101,31 @@ function Login() {
               Signup
             </button>
           </Link>
+
+          
+
+          {showUpdatePassword ? (
+              <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{ width: '50%' }}>
+                <div className="form-floating mt-3">
+                  <input
+                    type="password"
+                    value={newPassword}
+                    className='form-control rounded-5 '
+                    placeholder='New Password'
+                    onChange={(e) => setNewPassword(e.target.value)}
+                  />
+                  <label htmlFor="floatingInput">New Password</label>
+                </div>
+                <button onClick={handleUpdatePassword} className=' mt-3'>Update Password</button>
+              </div>
+            ) : (
+              <button onClick={() => setShowUpdatePassword(true)} className=' mt-3'>Forget Password</button>
+            )}
+          </div>
           </div>  
         </div>
       </div>
-
-
-
-    </div>
+   
   );
 }
 
