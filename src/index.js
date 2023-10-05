@@ -50,11 +50,8 @@ const router = createBrowserRouter([
   {
     path: '/menucard',
     element: <Menucard/>
-  },
-  {
-    path: '/blog',
-    element: <Blog/>
   }
+  
 ])
 root.render(
   <RouterProvider router={router} />
