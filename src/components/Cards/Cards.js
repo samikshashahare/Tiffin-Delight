@@ -1,13 +1,14 @@
 import React from "react";
 import './Cards.css'
-const  Cards = ({id,img,minimeal,regularmeal,jumbomeal,tittle}) =>{
+import { Link } from "react-router-dom";
+const  Cards = ({id,img,minimeal,regularmeal,jumbomeal,tittle,type}) =>{
     return(
         <div>
            <div className='menu-card'>
                   <img src={img} alt="" className="food-img" />
                  
                 <span className="food-title">{tittle}</span>
-                <span className="lunch-dinner" >Lunch/Dinner</span>
+                <span className="lunch-dinner" >{type}</span>
                 
                  <div className="food-flex">
                       <div className="sub">
@@ -22,6 +23,7 @@ const  Cards = ({id,img,minimeal,regularmeal,jumbomeal,tittle}) =>{
                         <p className="food-price">jumbo Meal</p>
                         <span>₹{jumbomeal}</span>
                       </div>
+                      <Link to={`/menucard/addtocard${id}`}/>
                  </div>
            </div>
         </div>
