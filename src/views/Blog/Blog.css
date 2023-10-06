@@ -1,5 +1,5 @@
 .blog-cont1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(./blog-img1.jpg);
   background-size: cover;
   height: 480px;

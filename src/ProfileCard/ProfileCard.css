@@ -1,13 +1,13 @@
 
 .profile-img{
-    height: 120px;
-    width: 120px;
+    height: 120%;
+    width: 33%;
     border-radius: 50%;
     display: block;
     margin: 20px auto;
     position: absolute;
     bottom: 120px;
-    left: 120px;
+    left: 35%;
 }
 .user-name{
     margin-top:80px ;
@@ -68,4 +68,5 @@
     .address{
         width: 10vw;
     }
+    
 }

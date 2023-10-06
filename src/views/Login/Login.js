@@ -69,25 +69,33 @@ function Login() {
           <h1 className='mb-5'>jjj</h1>
         <div className='form'> 
         <h1 className='mb-5 text-center  text-dark' style={{fontFamily:'gabriola' ,fontWeight:'bolder'}}>Login</h1>
+
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm' style={{width : '80%'}}>
+
           <div className='col-md-6 mx-auto col-lg-6 col- col-sm' style={{width : '60%'}}>
+
             <div className="form-floating mb-3">
               <input
                 type="email"
                 value={email}
-                className='form-control my-input rounded-5'
+                className='form-control my-input rounded-2'
                 placeholder='Enter Email'
                 onChange={(e) => setEmail(e.target.value)}
               />
               <label htmlFor="floatingInput">Enter Email </label>
             </div>
           </div>
+
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '80%'}}>
+
           <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '60%'}}>
+
             <div className="form-floating">
 
               <input
                 type="password"
                 value={password}
-                className='form-control rounded-5 '
+                className='form-control rounded-2 '
                 placeholder='Password'
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -113,7 +121,7 @@ function Login() {
                   <input
                     type="password"
                     value={newPassword}
-                    className='form-control rounded-5 '
+                    className='form-control rounded-2 '
                     placeholder='New Password'
                     onChange={(e) => setNewPassword(e.target.value)}
                   />
