@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Usersignup.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import showToast from 'crunchy-toast';
 
 
 function Signup() {
@@ -28,21 +29,21 @@ function Signup() {
 
   const requiredFields = () => {
     if (!email) {
-      alert("Please enter your email");
+      showToast('Enter Email', 'warning', 3000);
       return false;
     }
     if (!EmailValid(email)) {
-      alert('Please enter a valid email address');
+      showToast('Enter Valid Email', 'warning', 3000);
       return false;
     }
 
     if (!password) {
-      alert("Please enter a password")
+      showToast('Enter Password', 'warning', 3000);
       return false;
     }
 
     if (password !== confirmPassword) {
-      alert("Passwords do not match!")
+      showToast('Password do not Match', 'warning', 3000);
       return false;
     }
 
@@ -71,7 +72,7 @@ function Signup() {
         }
       });
     } else {
-      alert('Geolocation is not available in your browser.');
+      showToast('Geolocation is not avilable in browser', 'warning', 3000);
     }
   }
 
@@ -86,7 +87,7 @@ function Signup() {
     });
 
     if (isEmailAlreadyExists) {
-      alert('Email is already registered. Please use a different email.');
+      showToast('Entered Email is already Exist Please try different Email', 'warning', 3000);
       return;
     }
 
@@ -119,14 +120,14 @@ function Signup() {
 
         <div className='sign-up-form'>
           <h1 className='mb-2'>jjj</h1>
-          <form className='form'>
-            <h1 className=' mb-2 text-center text-dark' style={{ fontFamily: 'gabriola', fontWeight: 'bolder' }}>Sign Up</h1>
+          <form className='form form-div'>
+            <h1 className=' mb-2 ms-5 text-center text-dark' style={{ fontFamily: 'gabriola', fontWeight: 'bolder'}}>Sign Up</h1>
 
 
             <div className="col-md-6 mx-auto col-lg-6 col- col-sm " >
-              <div className="form-floating mb-3">
+              <div className="form-floating input mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className=' form-control my-input  rounded-2'
                   type="email"
                   value={email}
                   placeholder='Enter Email'
@@ -137,9 +138,9 @@ function Signup() {
             </div>
 
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
-              <div className="form-floating mb-3">
+              <div className="form-floating  input mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="Text"
                   placeholder="Full Name"
                   value={firstName}
@@ -150,9 +151,9 @@ function Signup() {
             </div>
 
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
-              <div className="form-floating mb-3 emoji-position">
+              <div className="form-floating mb-3 input emoji-position">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="Text"
                   placeholder="Full Address"
                   value={address}
@@ -164,9 +165,9 @@ function Signup() {
               </div>
             </div>
             <div className='col-md-6 mx-auto col-lg-6 col- col-sm'>
-              <div className="form-floating mb-3">
+              <div className="form-floating input mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="text"
                   placeholder="Mobile No."
                   value={mobile}
@@ -176,9 +177,9 @@ function Signup() {
               </div>
             </div>
             <div className="col-md-6 mx-auto col-lg-6 col- col-sm">
-              <div className="form-floating mb-3">
+              <div className="form-floating input mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="password"
                   value={password}
                   placeholder='Password'
@@ -188,9 +189,9 @@ function Signup() {
               </div>
             </div>
             <div className="col-md-6 mx-auto col-lg-6 col- col-sm">
-              <div className="form-floating mb-3">
+              <div className="form-floating input mb-3">
                 <input
-                  className='form-control my-input rounded-5'
+                  className='form-control my-input rounded-2'
                   type="password"
                   value={confirmPassword}
                   placeholder='ConfirmPassword'
@@ -200,7 +201,7 @@ function Signup() {
               </div>
             </div>
 
-            <button onClick={handleSignup} className='sing-up-btn'>Sign Up</button>
+            <button onClick={handleSignup} className='sing-up-btn' type='button'>Sign Up</button>
             <br />
             <Link to={'/login'}  ><span className='d-block text-center p-0 text-black'>Already Account?</span></Link>
 

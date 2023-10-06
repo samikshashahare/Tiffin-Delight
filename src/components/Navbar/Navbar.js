@@ -6,15 +6,22 @@ import profileLogo from "./profile-logo.png";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [getinfo, setGetinfo] = useState([]);
+  const [getimg, setGetimg] = useState([]);
+
+  // useEffect(() => {
+  //   const profile = localStorage.getItem('image') || "";
+  //   const profileDetails = JSON.parse(profile);
+  //   setGetimg(profileDetails);
+  // }, []);
 
   useEffect(() => {
-    const profile = localStorage.getItem('details');
-    const profileDetails = JSON.parse(profile);
-    setGetinfo(profileDetails);
+    const profile = localStorage.getItem('image') || "";
+    setGetimg(profile);  // No need to parse as JSON, it's a string
   }, []);
+  
 
-  const firstName = getinfo && getinfo.length > 0 ? getinfo[0].firstName : '';
+  // const imageUrl = getimg  ? getimg: '';
+
 
   return (
     <div>
@@ -26,15 +33,21 @@ export default function Navbar() {
               <Link to="/" className="nav-link">Home</Link>
             </li>
             <li className="list-item">
+              <Link to="/" className="nav-link">Blog</Link>
+            </li>
+
+            <li className="list-item">
               <Link to="/about" className="nav-link">About</Link>
             </li>
             <li className="list-item">
               <Link to="/contact" className="nav-link">Contact</Link>
             </li>
             <li>
-              <Link to="/userpofile">
+              <Link to="/userprofile">
                 <div className="text-center  ">
-                  <img src={profileLogo} alt="profile" className="profile-logo" />
+                <img src={getimg ? getimg : profileLogo} alt="profile" className="profile-logo" />
+                  
+                  {/* <img src={profileLogo} alt="profile" className="profile-logo" /> */}
                   {/* <p className="link-deco">{firstName}</p> */}
                 </div>
               </Link>

@@ -8,6 +8,10 @@ import Login from './views/Login/Login';
 import UserProfile from './views/UserProfile/UserProfile';
 import Usersignup from './views/Usersignup/Usersignup';
 import MealPlan from './views/MealPlan/MealPlan';
+import Blog from './views/Blog/Blog';
+//blog page 
+import BlogPost from './views/Blog/BlogPost/BlogPost';
+import BlogReadPost from './views/Blog/BlogReadPost/BlogReadPost';
 
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -50,7 +54,23 @@ const router = createBrowserRouter([
   {
     path: '/menucard',
     element: <Menucard/>
+  },
+  {
+
+    path: '/blog',
+    element: <Blog />
+
+  },
+  {
+    path: '/blogpost',
+    element: <BlogPost />
+  },
+  {
+    path: '/blogpost/blogreadpost/:id',
+    element: <BlogReadPost />
   }
+
+  
   
 ])
 root.render(

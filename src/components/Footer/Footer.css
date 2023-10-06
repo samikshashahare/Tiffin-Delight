@@ -4,12 +4,13 @@
     background-color: black;
     width: 100%;
     padding: 10px;
+    padding-top: 50px;
 }
 .footer-list-cont{
     display: flex;
     flex-wrap: wrap;
     color: white;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .footer-cont-heading{
     font-size: 28px;
@@ -18,7 +19,8 @@
 .footer-img{
     height: 40px;
     width: 170px;
-    margin: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
     border: 1px solid white;
     border-radius: 8px;
     
@@ -26,6 +28,7 @@
 .fotter-cont-img{
     display: flex;
     justify-content: center;
+    margin-left: 100px;
 }
 .fotter-cont-logos{
     padding: 20px;
@@ -51,4 +54,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    .footer-list-cont{
+        display: flex;
+        flex-direction: column;
+    }
+   .fotter-cont-img{
+    display: flex;
+    margin-left: 5px;
+   }
+
 }
