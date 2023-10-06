@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Usersignup.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import showToast from 'crunchy-toast';
 
 
 function Signup() {
@@ -28,21 +29,21 @@ function Signup() {
 
   const requiredFields = () => {
     if (!email) {
-      alert("Please enter your email");
+      showToast('Enter Email', 'warning', 3000);
       return false;
     }
     if (!EmailValid(email)) {
-      alert('Please enter a valid email address');
+      showToast('Enter Valid Email', 'warning', 3000);
       return false;
     }
 
     if (!password) {
-      alert("Please enter a password")
+      showToast('Enter Password', 'warning', 3000);
       return false;
     }
 
     if (password !== confirmPassword) {
-      alert("Passwords do not match!")
+      showToast('Password do not Match', 'warning', 3000);
       return false;
     }
 
@@ -71,7 +72,7 @@ function Signup() {
         }
       });
     } else {
-      alert('Geolocation is not available in your browser.');
+      showToast('Geolocation is not avilable in browser', 'warning', 3000);
     }
   }
 
@@ -86,7 +87,7 @@ function Signup() {
     });
 
     if (isEmailAlreadyExists) {
-      alert('Email is already registered. Please use a different email.');
+      showToast('Entered Email is already Exist Please try different Email', 'warning', 3000);
       return;
     }
 
@@ -200,7 +201,7 @@ function Signup() {
               </div>
             </div>
 
-            <button onClick={handleSignup} className='sing-up-btn'>Sign Up</button>
+            <button onClick={handleSignup} className='sing-up-btn' type='button'>Sign Up</button>
             <br />
             <Link to={'/login'}  ><span className='d-block text-center p-0 text-black'>Already Account?</span></Link>
 
