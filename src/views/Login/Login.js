@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
+import showToast from 'crunchy-toast';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ function Login() {
     const logindata = localStorage.getItem('details');
 
     if (!logindata) {
-      alert('No user data found in local storage.');
+      showToast('No data found in localstorage', 'warning', 3000);
       return;
     }
 
@@ -27,9 +28,9 @@ function Login() {
 
 
     if (matchingUser) {
-      alert('Logged in successfully!');
+      showToast('Login Successfully', 'success', 3000);
     } else {
-      alert('Invalid email or password.');
+      showToast('Invalid Email ID and Password', 'warning', 3000);
     }
   };
 
@@ -38,7 +39,7 @@ function Login() {
     const logindata = localStorage.getItem('details');
 
     if (!logindata) {
-      alert('No user data found in local storage.');
+      showToast('No data found in localstorage', 'warning', 3000);
       return;
     }
 
@@ -50,9 +51,9 @@ function Login() {
     if (userIndex !== -1) {
       storedDetails[userIndex].password = newPassword;
       localStorage.setItem('details', JSON.stringify(storedDetails));
-      alert('Password updated successfully!');
+      showToast('Password update successfully', 'success', 3000);
     } else {
-      alert('User not found.');
+      showToast('User not found', 'warning', 3000);
     }
 
     setShowUpdatePassword(false)
