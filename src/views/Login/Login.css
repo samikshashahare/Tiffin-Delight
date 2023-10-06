@@ -25,6 +25,11 @@
   cursor: pointer;
   font-size: 16px;
 }
+/* .Btn-contanier{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+} */
 
 .login-button:hover {
   transform: scale(0.9);
