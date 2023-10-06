@@ -13,7 +13,10 @@ const UserProfile = () => {
     useEffect(() => {
         const profile = localStorage.getItem('details')
         const profileDetails = JSON.parse(profile)
-        setGetinfo(profileDetails)
+        if(profileDetails && profileDetails.length>0)
+        {
+            setGetinfo(profileDetails)
+        }
         console.log(profileDetails)
     }, [])
 
