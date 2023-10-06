@@ -1,6 +1,6 @@
 import React from 'react'
 import './BlogPost.css';
-import BlogData from './../Config/Config.json';
+import BlogData from './../Config/blogData.json';
 import BlogPreviewpostcard from './../Previewpostcard/Previewpostcard'
 function BlogPost() {
   return (

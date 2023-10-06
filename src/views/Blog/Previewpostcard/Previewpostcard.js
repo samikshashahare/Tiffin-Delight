@@ -9,6 +9,7 @@ function Previewpostcard({ id, Title, Description, Image, Date }) {
           <img className='Previewpostcard-img' src={Image} />
         </div>
         <p className='title'>{Title}</p>
+         < Link to={`/blogpost/blogreadpost/${id}`}className='Previewpostcard-btn'>Read more...</Link> 
 
       </div>
 

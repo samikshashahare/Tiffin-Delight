@@ -24,3 +24,14 @@
 .title:hover{
     color: #ff4500;
 }
+.Previewpostcard-btn{
+    display: flex;
+   margin-left: 190px;
+    text-decoration: none;
+    color: black;
+
+    
+}
+.Previewpostcard-btn:hover{
+    color: #ff4500;
+}

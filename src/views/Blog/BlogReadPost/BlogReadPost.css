@@ -1,0 +1,37 @@
+.Blogreadpost-container{
+    margin-top: 80px;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+.blogreadpost-title{
+    font-size: 35px;
+    font-family: serif;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    display: flex;
+    justify-content: start;
+}
+.blogreadpost-date{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.blogreadpost-img{
+    width: 100vh;
+    height: 350px;
+    margin-bottom: 30px;
+    box-shadow: 1px 2px 14px 15px #ccc;
+}
+.blogreadpost-description{
+    font-size: 20px;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    .blogreadpost-img{
+        width: 450px;
+        height: 350px;
+    }
+}
