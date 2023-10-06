@@ -15,6 +15,12 @@ export default function ProfileCard({ name, no, address, mail }) {
         setImage(URL.createObjectURL(file))
     }
 
+
+    // const existingArray = JSON.parse(localStorage.getItem('dataArray')|| "");
+    // // const imageUrlToAdd = 'https://example.com/image.jpg'; // Replace with your image URL
+    // existingArray.push(image);
+    // localStorage.setItem('imageUrls', JSON.stringify(existingArray));
+    // console.log('Image URL added to local storage:', image);
     return (
         <>
 
