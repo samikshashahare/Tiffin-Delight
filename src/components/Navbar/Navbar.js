@@ -26,13 +26,17 @@ export default function Navbar() {
               <Link to="/" className="nav-link">Home</Link>
             </li>
             <li className="list-item">
+              <Link to="/" className="nav-link">Blog</Link>
+            </li>
+
+            <li className="list-item">
               <Link to="/about" className="nav-link">About</Link>
             </li>
             <li className="list-item">
               <Link to="/contact" className="nav-link">Contact</Link>
             </li>
             <li>
-              <Link to="/userpofile">
+              <Link to="/userprofile">
                 <div className="text-center  ">
                   <img src={profileLogo} alt="profile" className="profile-logo" />
                   {/* <p className="link-deco">{firstName}</p> */}

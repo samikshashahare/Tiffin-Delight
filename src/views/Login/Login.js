@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [showUpdatePassword, setShowUpdatePassword] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogin = () => {
 
@@ -67,25 +68,33 @@ function Login() {
           <h1 className='mb-5'>jjj</h1>
         <div className='form'> 
         <h1 className='mb-5 text-center  text-dark' style={{fontFamily:'gabriola' ,fontWeight:'bolder'}}>Login</h1>
-          <div className='col-md-6 mx-auto col-lg-6 col- col-sm' style={{width : '50%'}}>
+
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm' style={{width : '80%'}}>
+
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm' style={{width : '60%'}}>
+
             <div className="form-floating mb-3">
               <input
                 type="email"
                 value={email}
-                className='form-control my-input rounded-5'
+                className='form-control my-input rounded-2'
                 placeholder='Enter Email'
                 onChange={(e) => setEmail(e.target.value)}
               />
               <label htmlFor="floatingInput">Enter Email </label>
             </div>
           </div>
-          <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '50%'}}>
+
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '80%'}}>
+
+          <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' style={{width : '60%'}}>
+
             <div className="form-floating">
 
               <input
                 type="password"
                 value={password}
-                className='form-control rounded-5 '
+                className='form-control rounded-2 '
                 placeholder='Password'
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -93,6 +102,7 @@ function Login() {
             </div>
            
           </div>
+          <div className='Btn-contanier'>
           <button onClick={handleLogin} className='login-button mt-3'>Login</button>
           <p className='text-center m-0 p-0'>OR</p>
           <Link to={'/usersignup'} style={{ textDecoration: 'none' }} >
@@ -101,7 +111,7 @@ function Login() {
               Signup
             </button>
           </Link>
-
+             </div>
           
 
           {showUpdatePassword ? (
@@ -110,16 +120,16 @@ function Login() {
                   <input
                     type="password"
                     value={newPassword}
-                    className='form-control rounded-5 '
+                    className='form-control rounded-2 '
                     placeholder='New Password'
                     onChange={(e) => setNewPassword(e.target.value)}
                   />
                   <label htmlFor="floatingInput">New Password</label>
                 </div>
-                <button onClick={handleUpdatePassword} className=' mt-3'>Update Password</button>
+                <button onClick={handleUpdatePassword} className=' mt-3 '>Update Password</button>
               </div>
             ) : (
-              <button onClick={() => setShowUpdatePassword(true)} className=' mt-3'>Forget Password</button>
+              <button onClick={() => setShowUpdatePassword(true)} className=' mt-3 '>Forget Password</button>
             )}
           </div>
           </div>  

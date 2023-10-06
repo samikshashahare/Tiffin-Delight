@@ -56,8 +56,10 @@ const router = createBrowserRouter([
     element: <Menucard/>
   },
   {
-    path:'/blog',
-    element: < Blog/>
+
+    path: '/blog',
+    element: <Blog />
+
   }
   
   

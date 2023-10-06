@@ -3,13 +3,22 @@
   width: 30%;
   padding: 10px;
   display: block;
-  margin: 3px auto;
+  margin: 3px 55%;
   background-color: #ef801a;
   color: #fff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+}
+.form-div{
+  width: 40%;
+
+  padding-right: 10vw;
+}
+.input{
+  width: 180%;
+
 }
 
 .back-ground-signup {
