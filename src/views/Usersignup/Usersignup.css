@@ -1,4 +1,4 @@
-/* Default styles for larger screens */
+
 
 
 
@@ -18,29 +18,20 @@
   position: relative;
 }
 
-/* .location-emoji {
-  position: absolute;
-  right: px;
-  bottom:-10px;
-  padding: 5px;
-  cursor: pointer;
-  height: 70px;
-} */
 
-/* Media query for mobile screens */
 @media (max-width: 768px) {
   .sing-up-btn {
-    width: 80%; /* Adjust width for smaller screens */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    width: 80%; 
+    font-size: 14px; 
   }
 
   .back-ground-signup,
   .sign-up-form {
-    height: auto; /* Allow content to determine height */
+    height: auto; 
   }
 
   .location-emoji {
-    right: 5px; /* Adjust position for smaller screens */
-    bottom: 15px; /* Adjust position for smaller screens */
+    right: 5px; 
+    bottom: 15px; 
   }
 }

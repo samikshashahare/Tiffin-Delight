@@ -1,39 +1,4 @@
-/* .my-input {
-  background-color: #F8F9FA;
-  font-size: 16px;
-  width: 300px; 
-} 
-*/
-/* 
-.login-bg-img {
-  background-color: #fff;
-  padding: 10px;
-  width: 400px;
-  margin: 0 auto;
-  border-radius: 10px;
-} */
 
-/* .login-button {
-  width: 20%;
-  padding: 7px 10px;
-  display: block;
-  margin: 0 auto;
-  background-color: #ef801a;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-} */
-/* .Btn-contanier{
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-} */
-
-/* .login-button:hover {
-  transform: scale(0.9);
-} */
 
 .background-img {
   background-size: cover;
@@ -44,15 +9,7 @@
   border: none;
   padding: 10px 20px;
 }
-/* 
-.form {
-  background-color: #ffffff7e;
-  height: auto;
-  width: 50%;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 20px;
-} */
+
 
 
 @media (max-width: 768px) {
