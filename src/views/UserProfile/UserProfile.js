@@ -3,8 +3,8 @@ import Navbar from "../../components/Navbar/Navbar";
 
 import ProfileCard from "../../ProfileCard/ProfileCard";
 // import Kashishimg from "./kashish.png" 
-import profileLogo from "./profile-logo.png"
-import { useEffect, useState, useRef } from "react"
+// import profileLogo from "./profile-logo.png"
+import { useEffect, useState} from "react"
 
 import "./UserProfile.css"
 const UserProfile = () => {
@@ -16,6 +16,16 @@ const UserProfile = () => {
         setGetinfo(profileDetails)
         console.log(profileDetails)
     }, [])
+
+    const [dataArray, setDataArray] = useState([]);
+
+  useEffect(() => {
+    // Load existing data from local storage
+    const existingData = JSON.parse(localStorage.getItem('dataArray'));
+    if (existingData) {
+      setDataArray(existingData);
+    }
+  }, []);
 
    
 
@@ -31,13 +41,11 @@ const UserProfile = () => {
                 <div className="col ">
                 <h1 className="text-center heading "> My Profile </h1>
 
-                <img src="./profile-logo.png" alt="image" />
-                <input type="file" />
+                
                    {
                     getinfo.map((user,index)=>{
                        return <ProfileCard key={index} 
-                       name={user.firstName} 
-                       img={profileLogo} 
+                       name={user.firstName}  
                        no={user.mobile} 
                        mail={user.email} 
                        address={user.address}/>
