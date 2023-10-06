@@ -118,10 +118,10 @@ function Login() {
                   />
                   <label htmlFor="floatingInput">New Password</label>
                 </div>
-                <button onClick={handleUpdatePassword} className=' mt-3'>Update Password</button>
+                <button onClick={handleUpdatePassword} className=' mt-3 '>Update Password</button>
               </div>
             ) : (
-              <button onClick={() => setShowUpdatePassword(true)} className=' mt-3'>Forget Password</button>
+              <button onClick={() => setShowUpdatePassword(true)} className=' mt-3 '>Forget Password</button>
             )}
           </div>
           </div>  
