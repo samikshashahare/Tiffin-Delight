@@ -6,7 +6,7 @@ const Homecard = ({img,text,heading}) => {
     <div>
       <div className='homecard  '>
         <img src={img} className='homecard-img'></img>
-       <h4 className='heading'>{heading}</h4>
+     <span>{heading}</span>
         <span className='text'>{text}</span>
       </div>
     </div>

@@ -8,10 +8,20 @@
     font-size: 4rem;
     position: absolute;
     left: 25rem;
-    top: 13rem;
+   top:10rem;
    font-weight: bold;
     color: white;
 
+}
+.delivery-input{
+    position: absolute;
+    top: 16rem;
+    left:25rem;
+}
+.see-nearby{
+    position: absolute;
+    top:16rem;
+    left:40rem;
 }
 @media screen and (max-width:360px){
     .herosection-text{

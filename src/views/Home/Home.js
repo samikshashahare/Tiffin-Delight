@@ -20,6 +20,10 @@ const Home = () => {
             <div className="herosection">
                 <img src={herosection} className="herosecton-img"></img>
                 <span className="herosection-text">Get food delivery and more</span>
+               
+                   <input type="text" placeholder="enter your delivery address" className="delivery-input"/>
+                    <button type="button" className="see-nearby">See what's nearby</button>
+                
                 <div className="d-flex container flex-wrap  justify-content-around ">
                     <Homecard img={local} heading="Local favorites" text="Satisfy any craving with delivery from popular neighborhood restaurants and chains. Reorder go-tos or find something new." />
                     <Homecard img={delivery} heading="Delivery or pickup" text="Sit back and relax, have us deliver to you or skip the line with pickup." />
