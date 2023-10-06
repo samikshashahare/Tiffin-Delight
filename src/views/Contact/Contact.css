@@ -37,15 +37,22 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 
 .contact-info{
     height: 30rem;
-    width: 12rem;
+    width: 20rem;
+   
     
 }
+
+.contact-card{
+    margin-left: 2rem;
+}
+
 .input-data{
     width: 40%;
     padding: 40px;
