@@ -1,7 +1,7 @@
 # Tffin Delight 
-##   Welcome to Tiffin Delight website We are passionate about food and dedicated to bringing you the best culinary experiences right to your doorstep. Our journey began with a simple idea  to make delicious, restaurant-quality food accessible to everyone, anytime.
+  Welcome to Tiffin Delight website We are passionate about food and dedicated to bringing you the best culinary experiences right to your doorstep. Our journey began with a simple idea  to make delicious, restaurant-quality food accessible to everyone, anytime.
 
-##   It all started with a small team of food enthusiasts who wanted to bridge the gap between busy lives and great meals. Over the years, we've grown into a vibrant community of food lovers, connecting people with their favorite dishes from local eateries to renowned restaurants.
+   It all started with a small team of food enthusiasts who wanted to bridge the gap between busy lives and great meals. Over the years, we've grown into a vibrant community of food lovers, connecting people with their favorite dishes from local eateries to renowned restaurants.
 
 # Usage 
 * Users can create accounts, browse restaurants, add items to their cart, and place orders.
@@ -24,4 +24,9 @@ If you'd like to contribute to this project, please follow these guidelines:
 4. Push your changes to your fork.
 Create a pull request to the main repository's develop branch.
 
-#
+# contributors 
+
+<a href="https://github.com/samikshashahare/tiffin-delight/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=samikshashahare/tiffin-delight" />
+</a>
+
