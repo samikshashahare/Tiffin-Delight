@@ -1,24 +1,13 @@
 
 
-.parent-div{
-    height:100vh;
+.mealplan-head{
+    color:orangered;
 }
-.img-thali{
-    width: 25vw;
+.card-div{
+    border: 1px solid black;
+    height: 100vh;
 }
-.meal-quantity{
-       background-color: rgb(253, 163, 127,0.2) ;
-    
-}
-.sweet-serve{
-    margin-top: 5%;
-    background-color: rgb(253, 163, 127,0.2) ;
-    /* opacity:0.2; */
-}
-.btn-AddToCard{
-    background-color: red ;
-    border: none;
-    padding: 7px;
-    padding-inline: 12px;
-    border-radius: 30px;
+.addtocard-div{
+    border: 1px solid black;
+    height: 100vh;
 }

@@ -48,10 +48,6 @@ const router = createBrowserRouter([
     element: <Usersignup />
   },
   {
-    path: '/mealplan',
-    element: <MealPlan />
-  },
-  {
     path: '/menucard',
     element: <Menucard/>
   },
@@ -68,10 +64,12 @@ const router = createBrowserRouter([
   {
     path: '/blogpost/blogreadpost/:id',
     element: <BlogReadPost />
-  }
+  },
+  {
+    path: '/card/mealplan:id',
+    element: <MealPlan />
+  },
 
-  
-  
 ])
 root.render(
   <RouterProvider router={router} />

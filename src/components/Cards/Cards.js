@@ -23,7 +23,7 @@ const  Cards = ({id,img,minimeal,regularmeal,jumbomeal,tittle,type}) =>{
                         <p className="food-price">jumbo Meal</p>
                         <span>₹{jumbomeal}</span>
                       </div>
-                      <Link to={`/menucard/addtocard${id}`}/>
+                      <Link to={`/menucard/mealplan/${id}`}>read more</Link>
                  </div>
            </div>
         </div>
