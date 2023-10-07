@@ -9,9 +9,10 @@
 .select-menu{
     background: rgba(0, 0, 0, 0.658);
     height: 70vh;
-    width: 30vw;
+    width: 70%;
     margin: auto;
     margin-top: 5rem;
+    overflow-y: scroll;
     
 }
 .likes{
@@ -21,7 +22,7 @@
 }
 .button{
     height: 2.8rem;
-    width: 8rem;
+    width: 30%;
    margin-left: 1rem;
    margin-top: 1rem;
    border:0.5px solid red;
@@ -45,7 +46,7 @@
     
 }
 .veg-non{
-    color: white;
+    /* color: Green; */
     font-size:1.3rem ;
     font-weight: 500;
    
@@ -69,6 +70,7 @@
    color: white;
    font-size: 1.3rem;
    font-weight: 500;
+   
   
 }
 .scroll-behaviour{
@@ -78,4 +80,10 @@
 .card-div{
     height: 100vh;
     overflow-y:scroll ;
+}
+
+@media only screen and (max-width: 768px){
+    .card-div{
+        margin-left: 20% ;
+    }
 }
