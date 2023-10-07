@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (<>
         <div >
-            <Navbar/>
+           
             <div className="herosection">
                 <img src={herosection} className="herosecton-img"></img>
                 <span className="herosection-text">Get food delivery and more</span>
