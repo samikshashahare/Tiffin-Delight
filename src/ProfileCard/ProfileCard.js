@@ -41,24 +41,7 @@ export default function ProfileCard({ name, no, address, mail }) {
                 <img src={require('./profile-logo.png')} alt='profile' className='profile-img' />
               )}
 
-              {/* {
-                if(storedImage){
-                  if(storedImage == ""){
-                    <img src={require('./profile-logo.png')} alt='profile' className='profile-img' />
-                  }
-                  else{
-                  <img src={storedImage} alt='profile' className='profile-img' />
-                  }
-                } 
-                else{
-                  <img src={require('./profile-logo.png')} alt='profile' className='profile-img' />
-                } 
-              } */}
-              {/* {storedImage ? (
-                <img src={storedImage} alt='profile' className='profile-img' />
-              ) : (
-                <img src={require('./profile-logo.png')} alt='profile' className='profile-img' />
-              )} */}
+  
             </div>
             <p className='user-name'>{name}</p>
           </div>
