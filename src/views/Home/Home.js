@@ -27,7 +27,7 @@ const Home = () => {
                
                    
                     <Link to="/login" className="see-nearby">Login</Link>
-                    <Link to="/usersignup" className="see-nearby signup"> Sign up</Link>
+                    <Link to="/usersignup" className=" signup"> Sign up</Link>
                 
                 <div className="d-flex container flex-wrap  justify-content-around ">
                     <Homecard img={local} heading="Local favorites" text="Satisfy any craving with delivery from popular neighborhood restaurants and chains. Reorder go-tos or find something new." />
