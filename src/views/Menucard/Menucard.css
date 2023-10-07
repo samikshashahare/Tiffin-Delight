@@ -75,3 +75,7 @@
     overflow-y: scroll;
     height: 100vh;
 }
+.card-div{
+    height: 100vh;
+    overflow-y:scroll ;
+}

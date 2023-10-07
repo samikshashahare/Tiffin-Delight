@@ -98,7 +98,7 @@ export function Navbar2() {
     </>
   )
 }
-
+  
 export function Navbar3() {
   const [getimg, setGetimg] = useState('');
 
@@ -108,12 +108,12 @@ export function Navbar3() {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg nav-bar navbar-light bg-light">
-      <div className="container-fluid  nav-bar" >
+    <nav className="navbar navbar-expand-lg   ">
+      <div className="container-fluid nav-bar " >
         <Link to="/menucard" className="navbar-brand">
           <img src={logo} alt="logo" className="nav-logo" />
         </Link>
-
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -127,30 +127,30 @@ export function Navbar3() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav  ms-auto">
-            <li className="nav-item">
+          <ul className="navbar-nav nav-menu ms-auto">
+            <li className="nav-item ">
               <Link to="/menucard" className="nav-link">
-                Home
+                 <span className="list-item">Home</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/blog" className="nav-link">
-                Blog
+              <span className="list-item">Blog</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/about" className="nav-link">
-                About
+              <span className="list-item">About</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/contact" className="nav-link">
-                Contact
+              <span className="list-item"> Contact</span>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item ">
               <Link to="/userprofile" className="nav-link">
-                <div className="text-center">
+                <div className="text-center nav-item">
                   <img
                     src={getimg ? getimg : profileLogo}
                     alt="profile"

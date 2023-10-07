@@ -10,22 +10,21 @@ import { useEffect, useState} from "react"
 import "./UserProfile.css"
 const UserProfile = () => {
     
-    const [getinfo, setGetinfo] = useState([])
+    const [getinfo, setGetinfo] = useState({})
     useEffect(() => {
-        const profile = localStorage.getItem('details')
+        const profile = localStorage.getItem('loginData')
         const profileDetails = JSON.parse(profile)
-        if(profileDetails && profileDetails.length>0)
+        if(profileDetails)
         {
             setGetinfo(profileDetails)
         }
-        console.log(profileDetails)
     }, [])
 
     const [dataArray, setDataArray] = useState([]);
 
   useEffect(() => {
     // Load existing data from local storage
-    const existingData = JSON.parse(localStorage.getItem('dataArray'));
+    const existingData = JSON.parse(localStorage.getItem('loginData'));
     if (existingData) {
       setDataArray(existingData);
     }
@@ -46,16 +45,7 @@ const UserProfile = () => {
                 <div className="col ">
                 <h1 className="text-center heading "> My Profile </h1>
 
-                
-                   {
-                    getinfo.map((user,index)=>{
-                       return <ProfileCard key={index} 
-                       name={user.firstName}  
-                       no={user.mobile} 
-                       mail={user.email} 
-                       address={user.address}/>
-                    })
-                   }
+                   <ProfileCard name={getinfo.firstName} address={getinfo.address} no={getinfo.mobile} mail={getinfo.email} />
                 </div>
             </div>
         </div>

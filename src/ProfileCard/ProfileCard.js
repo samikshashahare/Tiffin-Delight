@@ -40,8 +40,7 @@ export default function ProfileCard({ name, no, address, mail }) {
               ) : (
                 <img src={require('./profile-logo.png')} alt='profile' className='profile-img' />
               )}
-
-  
+              
             </div>
             <p className='user-name'>{name}</p>
           </div>
