@@ -1,0 +1,82 @@
+ .about-hero-section{
+    background:linear-gradient(rgba(68, 67, 67, 0.7),rgba(0,0,0,0.7)), url(https://foodindustryexecutive.com/wp-content/uploads/2022/06/bigstock-Food-Background-Food-Concept-W-445520756.jpg)  ;
+  background-size: cover;
+    background-repeat: no-repeat;
+   height: 100vh;
+    width: 100vw;
+    }
+    .main-section{
+   
+        flex-wrap: wrap;
+        padding-top: 5rem;
+       
+     }
+     .aboutimg{
+        width: 35rem;
+        height:35rem ;
+     }
+
+ .col-div{
+    border: 2px solid white;
+    background-color: white;
+    height: 35rem;
+    
+ }
+
+ .active-content h1{
+    font-size: 1.8rem;
+    
+}
+.active-content p{
+    font-size: 1.3rem;
+}
+ @media screen and (width:360px) {
+    .aboutimg{
+        width: 18rem;
+        height: 20rem;
+    }
+    .col{
+        margin: 1rem ;
+       
+    }
+   
+ }
+ 
+ 
+ .content{
+    display: none;
+}
+.active-content{
+    display: block;
+    
+    margin: 1rem 2rem ;
+    
+}
+.tab{
+    justify-content: space-around;
+}
+.single-tab{
+    background-color: transparent;
+    border: 1px solid red;
+    margin: 1rem 0;
+   
+    padding: 0 1.5rem;
+    border-radius:2rem;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.single-tab:hover{
+    background-color: red;
+color: white;
+font-size: 1.3rem;
+}
+.active-tab{
+    background-color: red;
+    font-size: 1.3rem;
+    color: white;
+    
+}
+.active-tab::before{
+    border: 2px solid black;
+    
+}
