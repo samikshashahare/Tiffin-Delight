@@ -8,11 +8,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [getimg, setGetimg] = useState([]);
 
-  // useEffect(() => {
-  //   const profile = localStorage.getItem('image') || "";
-  //   const profileDetails = JSON.parse(profile);
-  //   setGetimg(profileDetails);
-  // }, []);
+ 
 
   useEffect(() => {
     const profile = localStorage.getItem('image') || "";
@@ -30,10 +26,10 @@ export default function Navbar() {
           <img src={logo} alt="logo" className="nav-logo" />
           <ul type="none" className="nav-menu " >
             <li className="list-item">
-              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/menucard" className="nav-link">Home</Link>
             </li>
             <li className="list-item">
-              <Link to="/" className="nav-link">Blog</Link>
+              <Link to="/blog" className="nav-link">Blog</Link>
             </li>
 
             <li className="list-item">
@@ -46,9 +42,6 @@ export default function Navbar() {
               <Link to="/userprofile">
                 <div className="text-center  ">
                 <img src={getimg ? getimg : profileLogo} alt="profile" className="profile-logo" />
-                  
-                  {/* <img src={profileLogo} alt="profile" className="profile-logo" /> */}
-                  {/* <p className="link-deco">{firstName}</p> */}
                 </div>
               </Link>
             </li>
