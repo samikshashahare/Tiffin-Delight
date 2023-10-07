@@ -36,7 +36,7 @@ const Contact = () => {
     }
 
 
-    return (
+    return (<>
         <div>
             <Navbar/>
             <div className="section">
@@ -113,8 +113,9 @@ const Contact = () => {
 
                 </div>
             </div>
-            <Footer/>
+           
         </div>
+        <Footer/></>
     )
 }
 
