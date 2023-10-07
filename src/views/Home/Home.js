@@ -20,14 +20,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (<>
         <div >
-            <Navbar/>
+           
             <div className="herosection">
                 <img src={herosection} className="herosecton-img"></img>
                 <span className="herosection-text">Get food delivery and more</span>
                
                    
                     <Link to="/login" className="see-nearby">Login</Link>
-                    <Link to="/usersignup" className="see-nearby signup"> Sign up</Link>
+                    <Link to="/usersignup" className=" signup"> Sign up</Link>
                 
                 <div className="d-flex container flex-wrap  justify-content-around ">
                     <Homecard img={local} heading="Local favorites" text="Satisfy any craving with delivery from popular neighborhood restaurants and chains. Reorder go-tos or find something new." />

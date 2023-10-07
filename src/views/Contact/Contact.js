@@ -36,9 +36,9 @@ const Contact = () => {
     }
 
 
-    return (
+    return (<>
         <div>
-            <Navbar/>
+            
             <div className="section">
                 <div className="contact-container">
                     <div className="contact-us">
@@ -113,8 +113,9 @@ const Contact = () => {
 
                 </div>
             </div>
-            <Footer/>
+           
         </div>
+        </>
     )
 }
 
