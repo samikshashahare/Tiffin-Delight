@@ -8,10 +8,41 @@
     font-size: 4rem;
     position: absolute;
     left: 25rem;
-    top: 13rem;
+   top:10rem;
    font-weight: bold;
     color: white;
 
+}
+.delivery-input{
+    position: absolute;
+    top: 17rem;
+    left:28rem;
+    height: 3rem;
+    width: 25rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    padding-left: 4rem;
+    border: none;
+}
+.see-nearby{
+    position: absolute;
+    top:17rem;
+    left:50rem;
+    height: 3rem;
+    width: 9rem;
+    padding-left: 2rem;
+    padding-top: 0.4rem;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+   border-radius: 2rem;
+   border: none;
+   text-decoration: none;
+}
+.signup{
+    left:40rem;
 }
 @media screen and (max-width:360px){
     .herosection-text{
@@ -19,6 +50,7 @@
         margin: 0 1rem;
       top: 10rem;
       left: 2rem;
+      text-align: center;
     }
     .text-halthy{
         margin: 0 1rem;
@@ -28,6 +60,20 @@
     }
     .img-healthy{
        width: 20rem;
+    }
+    .delivery-input{
+        top: 17rem;
+        left:2rem;
+        width: 20rem;
+        padding-left: 2rem;
+    }
+    .see-nearby{
+      
+        top:21rem;
+        left:5rem;
+        height: 3rem;
+        width: 13rem;
+       
     }
 
 }

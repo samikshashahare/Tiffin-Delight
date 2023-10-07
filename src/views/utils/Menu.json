@@ -1,48 +1,137 @@
 [
     {
-    "id":1,
-    "img":"https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
-    "tittle":"Shreemaan Mess",
-    "miniMeal":75,
-    "regularMeal":95,
-    "jumboMeal":130,
-    "type":"breakfast"
-},
-{
-    "id":2,
-    "img":"https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
-    "tittle":"Shreemaan Mess",
-    "miniMeal":75,
-    "regularMeal":950,
-    "jumboMeal":187 ,
-    "type":"lunch"
-},
-{
-    "id":3,
-    "img":"https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
-    "tittle":"Shreemaan Mess",
-    "miniMeal":75,
-    "regularMeal":950,
-    "jumboMeal":187 ,
-    "type":"lunch"
-},
-{
-    "id":4,
-    "img":"https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
-    "tittle":"Shreemaan Mess",
-    "miniMeal":75,
-    "regularMeal":950,
-    "jumboMeal":187 ,
-    "type":"breakfast"
-},
-{
-    "id":5,
-    "img":"https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
-    "tittle":"Shreemaan Mess",
-    "miniMeal":75,
-    "regularMeal":950,
-    "jumboMeal":187 ,
-    "type":"dinner"
-}
-
+        "id": 1,
+        "img": "https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
+        "tittle": "Shreemaan Mess",
+        "miniMeal": 75,
+        "regularMeal": 95,
+        "jumboMeal": 130,
+        "type": "breakfast",
+        "minmealpackage": {
+            "day2": 130,
+            "day7": 170,
+            "day15": 1100,
+            "day30": 2230
+        },
+        "regularmealpackage": {
+            "day2": 190,
+            "day7": 665,
+            "day15": 1425,
+            "day30": 2850
+        },
+        "jumbomealpackage": {
+            "day2": 260,
+            "day7": 910,
+            "day15": 1950,
+            "day30": 3900
+        }
+    },
+    {
+        "id": 2,
+        "img": "https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
+        "tittle": "Shreemaan Mess",
+        "miniMeal": 75,
+        "regularMeal": 950,
+        "jumboMeal": 187,
+        "type": "lunch",
+        "minmealpackage": {
+            "day2": 150,
+            "day7": 190,
+            "day15": 1125,
+            "day30": 2250
+        },
+        "regularmealpackage": {
+            "day2": 190,
+            "day7": 665,
+            "day15": 1425,
+            "day30": 2850
+        },
+        "jumbomealpackage": {
+            "day2": 260,
+            "day7": 910,
+            "day15": 1950,
+            "day30": 3900
+        }
+    },
+    {
+        "id": 3,
+        "img": "https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
+        "tittle": "Shreemaan Mess",
+        "miniMeal": 75,
+        "regularMeal": 950,
+        "jumboMeal": 187,
+        "type": "lunch",
+        "minmealpackage": {
+            "day2": 150,
+            "day7": 190,
+            "day15": 1125,
+            "day30": 2250
+        },
+        "regularmealpackage": {
+            "day2": 190,
+            "day7": 665,
+            "day15": 1425,
+            "day30": 2850
+        },
+        "jumbomealpackage": {
+            "day2": 260,
+            "day7": 910,
+            "day15": 1950,
+            "day30": 3900
+        }
+    },
+    {
+        "id": 4,
+        "img": "https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
+        "tittle": "Shreemaan Mess",
+        "miniMeal": 75,
+        "regularMeal": 950,
+        "jumboMeal": 187,
+        "type": "breakfast",
+        "minmealpackage": {
+            "day2": 150,
+            "day7": 190,
+            "day15": 1125,
+            "day30": 2250
+        },
+        "regularmealpackage": {
+            "day2": 190,
+            "day7": 665,
+            "day15": 1425,
+            "day30": 2850
+        },
+        "jumbomealpackage": {
+            "day2": 260,
+            "day7": 910,
+            "day15": 1950,
+            "day30": 3900
+        }
+    },
+    {
+        "id": 5,
+        "img": "https://www.jagranimages.com/images/newimg/01022020/01_02_2020-thali_19989923_1293145.jpg",
+        "tittle": "Shreemaan Mess",
+        "miniMeal": 75,
+        "regularMeal": 950,
+        "jumboMeal": 187,
+        "type": "dinner",
+        "minmealpackage": {
+            "day2": 150,
+            "day7": 190,
+            "day15": 1125,
+            "day30": 2250
+        },
+        "regularmealpackage": {
+            "day2": 190,
+            "day7": 665,
+            "day15": 1425,
+            "day30": 2850
+        },
+        "jumbomealpackage": {
+            "day2": 260,
+            "day7": 910,
+            "day15": 1950,
+            "day30": 3900
+        }
+    }
 ]

@@ -13,13 +13,22 @@ import hunger from './Homecard/hunger.png';
 import tiffin from './Homecard/tiffin-service.png';
 import whatsapp from './Homecard/whatapp.png';
 import healthy from './Homeimg/healthy.png';
+import Navbar from "../../components/Navbar/Navbar";
+
 import './Home.css';
+import { Link } from "react-router-dom";
 const Home = () => {
     return (<>
         <div >
+            <Navbar/>
             <div className="herosection">
                 <img src={herosection} className="herosecton-img"></img>
                 <span className="herosection-text">Get food delivery and more</span>
+               
+                   
+                    <Link to="/login" className="see-nearby">Login</Link>
+                    <Link to="/usersignup" className="see-nearby signup"> Sign up</Link>
+                
                 <div className="d-flex container flex-wrap  justify-content-around ">
                     <Homecard img={local} heading="Local favorites" text="Satisfy any craving with delivery from popular neighborhood restaurants and chains. Reorder go-tos or find something new." />
                     <Homecard img={delivery} heading="Delivery or pickup" text="Sit back and relax, have us deliver to you or skip the line with pickup." />

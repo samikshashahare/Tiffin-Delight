@@ -66,7 +66,7 @@ const router = createBrowserRouter([
     element: <BlogPost />
   },
   {
-    path: '/blogreadpost',
+    path: '/blogpost/blogreadpost/:id',
     element: <BlogReadPost />
   }
 
