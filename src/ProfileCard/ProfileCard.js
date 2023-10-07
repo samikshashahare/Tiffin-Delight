@@ -1,5 +1,6 @@
 import './ProfileCard.css';
 import { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ProfileCard({ name, no, address, mail }) {
   const inputRef = useRef(null);
@@ -40,7 +41,7 @@ export default function ProfileCard({ name, no, address, mail }) {
               ) : (
                 <img src={require('./profile-logo.png')} alt='profile' className='profile-img' />
               )}
-              
+
             </div>
             <p className='user-name'>{name}</p>
           </div>
@@ -60,6 +61,8 @@ export default function ProfileCard({ name, no, address, mail }) {
               <span> {mail} </span>
             </div>
           </div>
+
+                <Link to="/" > <button className='logout-btn' >LogOut</button> </Link>
         </div>
       </div>
     </>

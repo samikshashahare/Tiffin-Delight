@@ -5,6 +5,7 @@
     /* border-radius: 50%; */
     border-radius: 5%;
     display: block;
+    
     margin: 20px auto;
     position: absolute;
     bottom: 120px;
@@ -53,6 +54,13 @@
     bottom: 80px;
     overflow-y: hidden;
 
+}
+.logout-btn{
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 30px;
+    color:#fff;
 }
 .icon{
     height: 20px;
