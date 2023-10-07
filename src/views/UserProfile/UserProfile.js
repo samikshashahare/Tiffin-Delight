@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { Navbar2 } from "../../components/Navbar/Navbar";
+import { Navbar3 } from "../../components/Navbar/Navbar";
 
 import ProfileCard from "../../ProfileCard/ProfileCard";
+// import Kashishimg from "./kashish.png" 
+// import profileLogo from "./profile-logo.png"
 import { useEffect, useState} from "react"
 
 import "./UserProfile.css"
@@ -33,11 +35,9 @@ const UserProfile = () => {
 
     return (
         <>
-            <Navbar />
-                <br />
-                <br />
-                <br />
-            <Navbar2 />
+            {/* <Navbar /> */}
+            <Navbar3 />
+
         <div className="Profile-page" >
 
             
@@ -62,5 +62,6 @@ const UserProfile = () => {
         </>
     )
 }
+
  
 export default UserProfile

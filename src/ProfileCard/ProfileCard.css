@@ -49,6 +49,8 @@
     border-bottom: 2px solid rgb(0, 0, 0);
     position: relative;
     bottom: 80px;
+    overflow-y: hidden;
+
 }
 .icon{
     height: 20px;
