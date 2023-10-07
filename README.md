@@ -2,6 +2,10 @@
   Welcome to Tiffin Delight website We are passionate about food and dedicated to bringing you the best culinary experiences right to your doorstep. Our journey began with a simple idea  to make delicious, restaurant-quality food accessible to everyone, anytime.
 
    It all started with a small team of food enthusiasts who wanted to bridge the gap between busy lives and great meals. Over the years, we've grown into a vibrant community of food lovers, connecting people with their favorite dishes from local eateries to renowned restaurants.
+   ## Our website
+   ![home page of our website](img1.png)
+   ![teasty food ](img2.png)
+   ![menu card ](img3.png)
 
 # Usage 
 * Users can create accounts, browse restaurants, add items to their cart, and place orders.

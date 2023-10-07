@@ -28,7 +28,8 @@ function Login() {
 
 
     if (matchingUser) {
-      showToast('Login Successfully', 'success', 3000);
+      showToast(`Welcome Back ${matchingUser.firstName}`, 'success', 3000);
+      localStorage.setItem('loginData',JSON.stringify(matchingUser))
       navigate('/menucard')
     } else {
       showToast('Invalid Email ID and Password', 'warning', 3000);
