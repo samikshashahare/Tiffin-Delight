@@ -29,6 +29,7 @@ function Login() {
 
     if (matchingUser) {
       showToast('Login Successfully', 'success', 3000);
+      navigate('/menucard')
     } else {
       showToast('Invalid Email ID and Password', 'warning', 3000);
     }
@@ -101,11 +102,11 @@ function Login() {
            
          
           <div className='Btn-contanier'>
-          <button onClick={handleLogin} className='send mt-3'>Login</button>
+          <button onClick={handleLogin} className='update-btn mt-3'>Login</button>
           <p className='text-center m-0 p-0'>OR</p>
           <Link to={'/usersignup'} style={{ textDecoration: 'none' }} >
             <button
-              className='send'>
+              className='update-btn'>
               Signup
             </button>
           </Link>
