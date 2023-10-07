@@ -1,5 +1,6 @@
 import React from "react";
 import './Contact.css';
+import Navbar from "../../components/Navbar/Navbar";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -7,6 +8,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 import showToast from 'crunchy-toast';
+import Footer from "../../components/Footer/Footer";
 
 
 const Contact = () => {
@@ -36,11 +38,13 @@ const Contact = () => {
 
     return (
         <div>
+            <Navbar/>
             <div className="section">
                 <div className="contact-container">
                     <div className="contact-us">
                         <div className="heading-contact"><h2>Contact Us</h2></div>
-                        <div className="contact-para"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum animi voluptatibus facilis, esse architecto tempore pariatur sed nihil fugit, deserunt voluptas! At mollitia minus iste consequuntur soluta sunt non!</p></div>
+                        <div className="contact-para"><p>
+                        Welcome to Tiffin Delight website We are passionate about food and dedicated to bringing you the best culinary experiences right to your doorstep. Our journey began with a simple idea  to make delicious, restaurant-quality food accessible to everyone, anytime.</p></div>
                     </div>
 
                     <div className="second-contact-container container">
@@ -50,7 +54,7 @@ const Contact = () => {
                                     <FontAwesomeIcon icon={faLocationDot} size="2x" style={{ color: "white", }} />  </div>
                                 <div className="contact-card">
                                     <h3>Address</h3>
-                                    <p>shevalewadi </p>
+                                    <p>unnamed road, Gopalpatti, - 412307, Maharashtra, India </p>
                                 </div>
                             </div>
 
@@ -59,7 +63,7 @@ const Contact = () => {
                                     <FontAwesomeIcon icon={faEnvelope} size="2x" style={{ color: "white", }} /> </div>
                                 <div className="contact-card">
                                     <h3>Email</h3>
-                                    <p>faPhonefaPhonefaPhone </p>
+                                    <p>tiffindelight@gmail.com </p>
                                 </div>
                             </div>
 
@@ -67,8 +71,8 @@ const Contact = () => {
                                 <div className="ico">
                                     <FontAwesomeIcon icon={faPhone} size="2x" style={{ color: "white", }} /> </div>
                                 <div className="contact-card">
-                                    <h3>Email</h3>
-                                    <p>faPhonefaPhonefaPhone </p>
+                                    <h3>Phone</h3>
+                                    <p>9987-9987-9900 </p>
                                 </div>
                             </div>
 
@@ -109,6 +113,7 @@ const Contact = () => {
 
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

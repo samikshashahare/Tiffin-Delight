@@ -33,7 +33,7 @@ export default function Navbar() {
               <Link to="/" className="nav-link">Home</Link>
             </li>
             <li className="list-item">
-              <Link to="/" className="nav-link">Blog</Link>
+              <Link to="/blog" className="nav-link">Blog</Link>
             </li>
 
             <li className="list-item">
