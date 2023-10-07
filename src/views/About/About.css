@@ -39,6 +39,30 @@
         margin: 1rem ;
        
     }
+    .about-hero-section{
+        height: 100%;
+    }
+    
+    .col-div{
+width: 19rem
+    }
+    .active-content h1{
+        font-size: 1.1rem;
+        
+    }
+    .active-content p{
+        font-size: 1rem;
+    }
+    .single-tab h2{
+        font-size: 1rem;
+    }
+    .single-tab{
+        padding: 0 1rem;
+    }
+    .tab-content{
+        margin-bottom: 3rem;
+    }
+
    
  }
  
