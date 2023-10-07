@@ -30,13 +30,8 @@ function BlogReadPost() {
                 <p className='blogreadpost-date'>{blogpost.Date}</p>
                 <img src={blogpost.ImageUrl} className='blogreadpost-img' />
                 <p className='blogreadpost-description'>{blogpost.Description}</p>
-
-
-
-
-
-                <Footer />
             </div>
+            < Footer/>
 
         </>
     )
