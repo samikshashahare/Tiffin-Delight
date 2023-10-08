@@ -2,8 +2,10 @@
 .profile-img{
     height: 120%;
     width: 33%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 5%;
     display: block;
+    
     margin: 20px auto;
     position: absolute;
     bottom: 120px;
@@ -31,12 +33,13 @@
     width: 30vw;
     margin: 45px auto;
     padding: 10px 20px;
-    background: rgba(246, 232, 232, 0.587);
-    /* color: aliceblue; */
+    background-color: aliceblue;
+    /* background: rgba(246, 232, 232, 0.985); */
     font-size: 20px;
     font-weight: bolder;
     color: black;
-    border-radius: 25px;
+    border-radius: 2px;
+    /* border-radius: 25px; */
     /* box-shadow: 0 0 5px 5px rgba(225, 216, 216, 0.898); */
     
 }
@@ -49,13 +52,24 @@
     border-bottom: 2px solid rgb(0, 0, 0);
     position: relative;
     bottom: 80px;
+    overflow-y: hidden;
+
+}
+.logout-btn{
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 30px;
+    color:#fff;
 }
 .icon{
     height: 20px;
     margin: 5px;
 }
-
-@media only screen and (max-width: 600px){
+::-webkit-scrollbar{
+    width: 5px;
+}
+@media only screen and (max-width: 768px){
     .remove{
         display: none;
     }
