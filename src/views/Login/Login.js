@@ -76,7 +76,7 @@ function Login() {
 
           <div className='col-md-6 mx-auto col-lg-6 col- col-sm' >
 
-            <div className="input-box ">
+            <div className="input-box  " style={{width : "100%"}}>
               <input
                 type="email"
                 value={email}
@@ -87,9 +87,9 @@ function Login() {
          
 
          
-          <div className='col-md-6 mx-auto col-lg-6 col- col-sm ' >
+          <div className='col-md-6  col-lg-6 col- col-sm ' >
 
-            <div className="input-box">
+            <div className="input-box"  style={{width : "200%"}}>
 
               <input
                 type="password"
@@ -102,12 +102,12 @@ function Login() {
             </div>
            
          
-          <div className='Btn-contanier'>
-          <button onClick={handleLogin} className='update-btn mt-3'>Login</button>
-          <p className='text-center m-0 p-0'>OR</p>
+          <div className='Btn-contanier ms-5 '>
+          <button onClick={handleLogin} className='update-btn mt-3' style={{width : "10vw"}}>Login</button>
+          <p className='text-center m-0 ms-5 p-0'>OR</p>
           <Link to={'/usersignup'} style={{ textDecoration: 'none' }} >
             <button
-              className='update-btn'>
+              className='update-btn' style={{width : "10vw"}}>
               Signup
             </button>
           </Link>
@@ -132,7 +132,10 @@ function Login() {
                 <button onClick={handleUpdatePassword} className=' update-btn mt-3 '>Update </button>
               </div>
             ) : (
-              <span onClick={() => setShowUpdatePassword(true)} className='  mt-3 '>Forget ?</span>
+              <span 
+              style={{cursor : "pointer", color: "blue"}}
+               onClick={() => setShowUpdatePassword(true)}
+                className='  mt-3 '>Forget ?</span>
             )} 
         </div>
       </div>
