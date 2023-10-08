@@ -1,6 +1,7 @@
 import React from "react";
 import './Contact.css';
 import Navbar from "../../components/Navbar/Navbar";
+import { Navbar2 } from "../../components/Navbar/Navbar";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -38,7 +39,7 @@ const Contact = () => {
 
     return (<>
         <div>
-            
+            <Navbar2/>
             <div className="section">
                 <div className="contact-container">
                     <div className="contact-us">
@@ -63,7 +64,7 @@ const Contact = () => {
                                     <FontAwesomeIcon icon={faEnvelope} size="2x" style={{ color: "white", }} /> </div>
                                 <div className="contact-card">
                                     <h3>Email</h3>
-                                    <p>tiffindelight@gmail.com </p>
+                                    <p>tiffiexpress@gmail.com </p>
                                 </div>
                             </div>
 
@@ -115,6 +116,8 @@ const Contact = () => {
             </div>
            
         </div>
+
+        <Footer/>
         </>
     )
 }
