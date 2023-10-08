@@ -65,10 +65,14 @@ const router = createBrowserRouter([
     path: '/blogpost/blogreadpost/:id',
     element: <BlogReadPost />
   },
+  // {
+  //   path: '/mealplan ',
+  //   element: <MealPlan />
+  // },
   {
-    path: '/card/mealplan:id',
+    path: '/menucard/mealplan/:id',
     element: <MealPlan />
-  },
+  }
 
 ])
 root.render(

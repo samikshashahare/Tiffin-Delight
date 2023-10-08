@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 const Menucard = () => {
-const [menu,setmenu] =useState('');
+const [menu,setmenu] = useState('');
  const search = (type) =>{
     setmenu(type);
  }
@@ -59,7 +59,7 @@ return menucard.type == menu
       filtermenu.map((card,index)=>{
         const {id,img,miniMeal,regularMeal,jumboMeal,tittle,type} = card
         return(<>
- <Cards key={index} id={id} img={img} minimeal={miniMeal} regularmeal={regularMeal} jumbomeal={jumboMeal} tittle={tittle} type={type}  />
+ <Cards key={index} id={id} img={img} minimeal={miniMeal} regularmeal={regularMeal} jumbomeal={jumboMeal} tittle={tittle} type={type} />
 
         </>)
       })

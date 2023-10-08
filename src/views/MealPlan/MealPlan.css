@@ -3,11 +3,29 @@
 .mealplan-head{
     color:orangered;
 }
-.card-div{
-    border: 1px solid black;
+.card-container{
+    border: 1px solid orangered;
     height: 100vh;
 }
-.addtocard-div{
-    border: 1px solid black;
+.cardlist-container{
+    border: 1px solid orangered;
     height: 100vh;
+}
+.img-tiffin{
+    width:60%
+}
+.daywise-price-div{
+    display: flex;
+    flex-direction:column;
+}
+.daywise-price{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
 }
