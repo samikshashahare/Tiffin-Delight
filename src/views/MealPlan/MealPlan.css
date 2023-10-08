@@ -1,24 +1,31 @@
 
 
-.parent-div{
-    height:100vh;
+.mealplan-head{
+    color:orangered;
 }
-.img-thali{
-    width: 25vw;
+.card-container{
+    border: 1px solid orangered;
+    height: 100vh;
 }
-.meal-quantity{
-       background-color: rgb(253, 163, 127,0.2) ;
-    
+.cardlist-container{
+    border: 1px solid orangered;
+    height: 100vh;
 }
-.sweet-serve{
-    margin-top: 5%;
-    background-color: rgb(253, 163, 127,0.2) ;
-    /* opacity:0.2; */
+.img-tiffin{
+    width:60%
 }
-.btn-AddToCard{
-    background-color: red ;
-    border: none;
-    padding: 7px;
-    padding-inline: 12px;
-    border-radius: 30px;
+.daywise-price-div{
+    display: flex;
+    flex-direction:column;
+}
+.daywise-price{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
 }

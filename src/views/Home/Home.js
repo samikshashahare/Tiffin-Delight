@@ -14,6 +14,7 @@ import tiffin from './Homecard/tiffin-service.png';
 import whatsapp from './Homecard/whatapp.png';
 import healthy from './Homeimg/healthy.png';
 import Navbar from "../../components/Navbar/Navbar";
+import scooty from './scooty.png';
 
 import './Home.css';
 import { Link } from "react-router-dom";
@@ -31,7 +32,7 @@ const Home = () => {
                 
                 <div className="d-flex container flex-wrap  justify-content-around ">
                     <Homecard img={local} heading="Local favorites" text="Satisfy any craving with delivery from popular neighborhood restaurants and chains. Reorder go-tos or find something new." />
-                    <Homecard img={delivery} heading="Delivery or pickup" text="Sit back and relax, have us deliver to you or skip the line with pickup." />
+                    <Homecard img={scooty} heading="Delivery " text="Sit back and relax, have us deliver to you or skip the line with pickup." />
                     <Homecard img={excusive} heading="Exclusive Perks" text="
 Discover more deals and restaurant rewards near you. Cash in on Perks and get $100s in savings."  />
                 </div>
@@ -39,7 +40,7 @@ Discover more deals and restaurant rewards near you. Cash in on Perks and get $1
 
             {/* home page second cards component */}
             <div className="container ">
-                <h2 className=" heading-card">WHY TIFFIN DELIGHT</h2>
+                <h2 className=" heading-card">Why Tiffin Express</h2>
                 <div className="d-flex container  justify-content-around  flex-wrap">
                     < Homecardtwo text="Order on
 Call / Whatsapp" img={whatsapp} />

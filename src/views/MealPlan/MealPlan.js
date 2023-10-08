@@ -1,39 +1,57 @@
 import React from 'react'
 import './MealPlan.css';
-import Addtocard from '../../components/Addtocard/Addtocard';
+import Menu from './../utils/Menu.json'
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { useParams } from 'react-router-dom'
 
+export default function MealPlan() {
+    const { id } = useParams();
+    const [card, setCard] = useState({})
 
+    useEffect(() => {
+        Menu.forEach((card) => {
+            if (card.id == id) {
+                setCard(card);
+            }
+        })
+    }, [id]);
+    return (
+        <>
+            <div className='container-fluid text-center'>
+                <h2 className='mealplan-head'>MealPlan</h2>
+                <div className="row">
+                    <div className="col card-container">
+                        <img src="https://t4.ftcdn.net/jpg/04/16/35/37/360_F_416353748_WjF5IlnLOTDz36UrfrHv0HhW0XB0ML7j.webp" className='img-tiffin' />
+                        <div className='daywise-price-div'>
+                            <h3>meal-price</h3>
+                            <div className='daywise-price'>
+                                <div>✅</div>
+                                <div>2 day</div>
+                                <div>7 day</div>
+                                <div>15 day</div>
+                                <div>13 day</div>
+                            </div>
+                            <div className=''>
 
-function MealPlan() {
-  return (
-    <>
-      <div className="container-fluid text-center">
-        <div className="row parent-div">
-          <div className="col-lg-6 col-sm-12 border border-dark">
+                                <div className='prices'>
+                                    <div>mini</div>
+                                    <div>Rs.220</div>
+                                    <div>Rs.735</div>
+                                    <div>Rs.1500</div>
+                                    <div>Rs.2850</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col cardlist-container">
+                        <h3>cardList</h3>
+                    </div>
+                </div>
+            </div>
 
-            <h3>show-cards-details</h3>
+        </>
 
-            <img src='https://rekart.s3.ap-south-1.amazonaws.com/N65YHmo52n7H3PG5/2f0254d737db0376975f57c1813bd1d7.jpg' className='img-thali'></img>
-
-            <h4>Happy Meal</h4>
-
-            <p>Starts from ₹130 ₹78/ Unit</p>
-
-            <h3 className='meal-quantity'>3 Chapati, 1 Subzi, Dal, Rice, Salad, Papad.</h3>
-
-            <h3 className='sweet-serve'>Sweet Once a week.</h3>
-
-            <button type='button' className='btn-AddToCard' onClick={Addtocard}>Add To Card</button>
-          </div>
-
-          <div className="col-lg-6 col-sm-12 border border-dark">
-
-            <h3>your meal choice</h3>
-          </div>
-        </div>
-      </div>
-    </>
-  )
+    )
 }
 
-export default MealPlan
