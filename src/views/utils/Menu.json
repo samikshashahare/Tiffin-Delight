@@ -225,7 +225,7 @@
         "jumboMeal": 220,
         "type": "dinner",
         "mini": {
-            "day 2": 220,
+            "day2": 220,
             "day 7": 735,
             "day 15": 1500,
             "day 30": 2850
