@@ -1,13 +1,14 @@
 .menu-card{
    height: 23rem;
-   width: 20rem;
+   width: 40vw;
     box-shadow: 0 0 5px 2px #ccc;
     border-radius: 10px;
     margin: 1rem 2rem ;
+    margin-left:25% ;
 }
 .food-img{
   height: 12rem;
-  width:18rem ;
+  width:25vw ;
   display: block;
   margin: 1rem auto;
 }
@@ -41,3 +42,12 @@ display: block;
     margin: 0;
 }
 
+@media only screen and (max-width: 768px){
+    .menu-card{
+        width: 60vw;
+        margin-left: 2%;
+    }
+    .food-img{
+        width: 90%;
+    }
+}

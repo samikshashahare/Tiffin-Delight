@@ -21,7 +21,7 @@ const [menu,setmenu] = useState('');
   }) : Menu
 
   return (<>
-    <div>
+    <div> 
       <div >
         <div class="container-fluid  ">
           <div class="row">
@@ -32,6 +32,7 @@ const [menu,setmenu] = useState('');
                 <button className='button' onClick={() => { search('lunch') }}>Lunch</button>
                 <button className='button' onClick={() => { search('dinner') }}>Dinner</button>
                 <form>
+                  <div className='cuisines'>
                   <span className='cuisines'>Cuisines</span>
                   <input type='checkbox'
                     value='Veg'
@@ -42,6 +43,7 @@ const [menu,setmenu] = useState('');
                     value='Non-veg'
                     className='checkbox-input' />
                   <span className='veg-non text-danger'>Non-veg</span>
+                  </div>
                 </form>
                 <div>
                   <button className='button list'>Maharashtrian</button>
@@ -54,7 +56,7 @@ const [menu,setmenu] = useState('');
                   <button className='button list'>Rajasthani</button>
                   <button className='button list'>Bengali</button>
                 </div>
-                <button className='search-btn'>Search</button>
+                {/* <button className='search-btn'>Search</button> */}
               </div>
             </div>
 
@@ -68,7 +70,7 @@ const [menu,setmenu] = useState('');
 
                     </>)
                   })
-                }
+                } 
 
               </div>
             </div>

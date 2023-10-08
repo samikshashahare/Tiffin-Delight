@@ -66,5 +66,5 @@ export default function ProfileCard({ name, no, address, mail }) {
         </div>
       </div>
     </>
-  );
+  ); 
 }
