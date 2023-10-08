@@ -6,7 +6,7 @@ const  Cards = ({id,img,minimeal,regularmeal,jumbomeal,tittle,type}) =>{
         <div className="d-flex">
            <div className='menu-card'>
                   <img src={img} alt="" className="food-img" />
-                 
+                  
                 <span className="food-title">{tittle}</span>
                 <span className="lunch-dinner" >{type}</span>
                 
