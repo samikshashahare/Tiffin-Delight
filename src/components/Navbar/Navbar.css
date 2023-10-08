@@ -16,6 +16,9 @@
     top: 0;
     
 }
+.toggle-logo{
+    height: 30px;
+}
 .nav-menu{
     display: flex;
     justify-content: space-around;

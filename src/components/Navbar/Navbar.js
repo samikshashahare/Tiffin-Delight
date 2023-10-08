@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import './Navbar.css';
 import './Navbar2.css'
+import toggle from './toggl.png'
 import logo from './logo.png';
 import profileLogo from "./profile-logo.png";
 import { Link } from "react-router-dom";
@@ -123,7 +124,7 @@ export function Navbar3() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <img src={toggle} alt="toggle" className="toggle-logo" />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">

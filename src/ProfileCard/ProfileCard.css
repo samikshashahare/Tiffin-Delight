@@ -2,10 +2,10 @@
 .profile-img{
     height: 120%;
     width: 33%;
-    /* border-radius: 50%; */
-    border-radius: 5%;
+    border-radius: 50%;
+    /* border-radius: 5%; */
     display: block;
-    
+     
     margin: 20px auto;
     position: absolute;
     bottom: 120px;

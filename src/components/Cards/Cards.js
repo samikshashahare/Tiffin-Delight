@@ -2,12 +2,12 @@ import React from "react";
 import './Cards.css'
 import { Link } from "react-router-dom";
 const  Cards = ({id,img,minimeal,regularmeal,jumbomeal,tittle,type}) =>{
-    return(
+    return( 
         <div className="d-flex">
            <div className='menu-card'>
                   <img src={img} alt="" className="food-img" />
                   
-                <span className="food-title">{tittle}</span>
+                <span className="food-title">{tittle}</span> 
                 <span className="lunch-dinner" >{type}</span>
                 
                  <div className="food-flex">
