@@ -6,18 +6,13 @@ import { useState } from 'react';
 
 
 const Menucard = () => {
-<<<<<<< HEAD
-const [menu,setmenu] = useState('');
- const search = (type) =>{
-=======
   const [menu, setmenu] = useState('');
   const search = (type) => {
->>>>>>> 9f1129c218caacb45b6b6ca52ab832cb35d28381
     setmenu(type);
   }
 
   const filtermenu = menu ? Menu.filter((menucard) => {
-    return menucard.type == menu
+    return menucard.type === menu
   }) : Menu
 
   return (<>
@@ -79,31 +74,7 @@ const [menu,setmenu] = useState('');
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-
-    <div class="col-lg-6 col-md-12">
-    <div className='d-flex '>
-    {
-      filtermenu.map((card,index)=>{
-        const {id,img,miniMeal,regularMeal,jumboMeal,tittle,type} = card
-        return(<>
- <Cards key={index} id={id} img={img} minimeal={miniMeal} regularmeal={regularMeal} jumbomeal={jumboMeal} tittle={tittle} type={type} />
-
-        </>)
-      })
-    }
-
-</div>
-    </div>
-   
-  </div>
-</div>
-     </div>
-    </div>
-    </>
-=======
   </>
->>>>>>> 9f1129c218caacb45b6b6ca52ab832cb35d28381
   )
 }
 
